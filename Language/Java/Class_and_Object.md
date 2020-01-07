@@ -20,7 +20,7 @@
 
 ## 객체와 인스턴스
 
-<img width="500px" src="./resources/instantiate.png"></img>  
+![인스턴스화](./resources/instantiate.PNG "width:500px;")  
 
 객체와 인스턴스는 같은 의미이지만,  
 
@@ -42,8 +42,8 @@ public class Main {
         Human child, adult; // '객체'
 
         // 인스턴스화
-        child = new Animal(); // child는 Human 클래스의 '인스턴스'(객체를 메모리에 할당)
-        adult = new Animal();
+        child = new Human(); // child는 Human 클래스의 '인스턴스'(객체를 메모리에 할당)
+        adult = new Human();
     }
 }
 ```    
