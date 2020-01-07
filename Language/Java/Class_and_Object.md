@@ -30,21 +30,23 @@
 어떤 클래스로부터 만들어진 것인지를 강조하는 보다 **구체적인 의미**  
 (실체화된 인스턴스는 메모리에 할당됨) 
 
-#### ex) 예시   
-    /* 클래스 */
-    public class Human {
-        ...
-    }
-    /* 객체와 인스턴스 */
-    public class Main {
-        public static void main(String[] args) {
-            Human child, adult; // '객체'
+#### ex) 예제   
+```Java
+/* 클래스 */
+public class Human {
+    ...
+}
+/* 객체와 인스턴스 */
+public class Main {
+    public static void main(String[] args) {
+        Human child, adult; // '객체'
 
-            // 인스턴스화
-            child = new Animal(); // child는 Human 클래스의 '인스턴스'(객체를 메모리에 할당)
-            adult = new Animal();
-        }
-    }    
+        // 인스턴스화
+        child = new Animal(); // child는 Human 클래스의 '인스턴스'(객체를 메모리에 할당)
+        adult = new Animal();
+    }
+}
+```    
 
 ## 클래스, 객체, 인스턴스의 차이
 
