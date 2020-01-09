@@ -3,7 +3,7 @@
 
 <br>
 
-## JVM(Java Virtual Machine)
+## 1. JVM(Java Virtual Machine)
 * JVM은 자바를 실행하기 위한 가상 컴퓨터(실제 컴퓨터가 아닌 소프트웨어로 구현한 것)
 
 * JVM은 JAVA와 OS 사이에서 중개자 역할을 수행하여 `JAVA가 OS에 독립적` 이며, 재사용 가능
@@ -13,7 +13,7 @@
 
 <br>
 
-## JVM의 구조
+## 2. JVM의 구조
 <img src="./resources/JVM.png" height="400px" align="center">
 
 ### Class Loader(클래스 로더)  
