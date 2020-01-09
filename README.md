@@ -16,6 +16,7 @@
     * [오버로딩과 오버라이딩](./Language/Java/Overloading_and_Overriding.md)
     * 상속  
     * [예외처리](./Language/Java/ExceptionHandling.md)  
+    * [지네릭스](./Language/Java/Generics.md)  
     
 ## 📕 Data Structure
 
