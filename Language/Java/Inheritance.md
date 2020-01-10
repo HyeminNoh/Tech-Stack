@@ -61,14 +61,95 @@ class Circle {
 상속관계 : '~은 ~이다.(is-a)'
 포함관계 : '~은 ~을 가지고 있다.(has-a)'
 ```
+* Car클래스와 SportsCar클래스는 `SportsCar는 Car이다.` (상속관계)
+* Card클래스와 Deck클래스는 `Deck은 Card를 가지고 있다.` (포함관계)
 
+#### ex) 포함관계 예제
+```
+class DeckTest {
+    public static void main(String args[]) {
+        Deck d = new Deck();     // 카드 한 벌을 만든다.
+        Card c = d.pick(0);      // 섞기 전에 제일 위의 카드를 뽑는다. cardArr[0]에 저장된 Card객체의 주소가 참조변수 c에 저장
+        System.out.println(c);   // System.out.println(c.toString());과 같다.
+        
+        d.shuffle();             // 카드를 섞는다.
+        c = d.pick(0);           // 섞은 후에 제일 위의 카드를 뽑는다.
+        System.out.println(c); 
+    }
+}
+
+class Deck {
+    final int CARD_NUM = 52;     // 카드의 개수
+    Card cardArr[] = new Card[CARD_NUM];  // Card객체 배열을 포함
+    
+    Deck() {  // Deck의 카드를 초기화한다.
+        int i = 0;
+        
+        for(int k=Card.KIND_MAX; k>0; k--)      
+            for(int n=0; n<Card.NUM_MAX; n++)
+                cardArr[i++] = new Card(k, n+1);   
+    }
+    
+    Card pick(int index) {       // 지정된 위치에 있는 카드 하나를 꺼내서 반환
+        return cardArr[index];
+    }
+    
+    Card pick() {                // Deck에서 카드 하나를 선택한다.
+        int index = (int)(Math.random() * CARD_NUM);
+        return pick(intdex);
+    }
+    
+    void shuffle() {             // 카드의 순서를 섞는다.
+        for(int i=0; i < cardArr.length; i++) {
+            int r = (int)(Math.random() * CARD_NUM);
+    
+            Card temp = cardArr[i];
+            cardArr[i] = cardArr[r];
+            cardArr[r] = temp;
+        }
+    }
+}
+
+class Card {
+    static final int KIND_MAX = 4;  // 카드 무늬의 수
+    static final int NUM_MAX = 13;  // 무늬별 카드 수
+
+    static final int SPACE = 4;
+    static final int DIAMOND = 3;
+    static final int HEART = 2;
+    static final int CLOVER = 1;
+    int kind;
+    int number;
+    
+    Card() {
+        this(SPACE, 1);
+    }
+    
+    Card(int kind, int number) {
+        this.kind = kind;
+        this.number = number;
+    }
+    
+    public String toString() {  // toString()은 인스턴스의 정보를 문자열로 반환할 목적으로 정의된 것
+        String[] kinds = {"", "CLOVER", "HEART", "DIAMOND", "SPACE"};
+        String numbers = "0123456789XJQK";
+        
+        return "kind : " + kinds[this.kind] + ", number : " + numbers.charAt(this.number);
+    }
+}
+```
+* toString( )은 모든 클래스의 조상인 Object클래스에 정의된 것으로, 어떤 종류의 객체에 대해서도 toString( ) 호출하는 것이 가능하다.
 <br>
 
 ## 4. 단일 상속(single inheritance)
+* `자바`에서는 `단일상속`만을 허용한다. 
+다중상속을 허용하면 여러 클래스로부터 상속받을 수 있기 때문에 복합적인 기능을 가진 클래스를 쉽게 작성할 수 있다는 장점이 있지만, 서로 다른 클래스로부터 상속받은 멤버간의 이름이 같은 경우 구별할 수 있는 방법이 없다는 단점을 가지고 있다.  
 
 <br>
 
 ## 5. Object 클래스 - 모든 클래스의 조상
+`Object클래스`는 모든 클래스 상속계층도의 최상위에 있는 조상클래스  
+다른 클래스로부터 상속을 받는다고 하더라도 상속계층도를 따라 조상클래스, 조상클래스의 조상클래스를 찾아 올라가다 보면 결국 마지막 최상위 조상은 Object클래스일 것이다.  
 
 <br>
 
