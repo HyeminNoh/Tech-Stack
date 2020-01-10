@@ -1,4 +1,7 @@
 # 오버로딩과 오버라이딩 (Overloading and Overriding)
+*written by sohyeon, hyemin 💡*
+
+<br>
 
 ## 오버로딩(Overloading)
 
@@ -55,5 +58,59 @@ public class test {
 ```
 메서드의 이름은 같지만 매개변수에 따라 각기 다른 결과를 출력하게 됩니다.  
 
+<br>
+
 ## 오버라이딩(Overriding)
 
+**조상 클래스로부터 상속받은 메서드의 내용을 변경하는 것**
+
+상속받은 메서드를 그대로 사용하기도 하지만 자손 클래스 자신에 맞게 변경해야하는 경우에 오버라이딩한다.
+
+#### 오버라이딩 조건
+```
+자손 클래스에서 오버라이딩하는 메서드는 조상 클래스의 메서드와
+1. 이름이 같아야 한다.
+2. 매개변수가 같아야 한다.
+3. 반환타입이 같아야 한다.
+
+단, 조상 클래스의 메서드를 자손 클래스에서 오버라이딩할 때
+1. 접근 제어자는 조상 클래스의 메서드보다 좁은 범위로 변경 할 수 없다.
+2. 조상 클래스의 메서드보다 많은 수의 예외를 선언할 수 없다.
+3. 인스턴스 메서드를 static메서드로 또는 그 반대로 변경할 수 없다.
+```
+
+#### ex) 예제
+```
+class Point {
+    int x;
+    int y;
+    
+    String getLocation() {
+        return "x : " + x + ", y : " + y;
+    }
+}
+
+class Point3D extends Point {
+    int z;
+
+    String getLocation() {
+        return "x : " + x + ", y : " + y + ", z : " + z;
+    }
+}
+```
+
+<br>
+
+## 오버로딩 vs 오버라이딩
+```
+오버로딩(overloading) : 기존에 없는 새로운 메서드를 정의하는 것(new)
+오버라이딩(overriding) : 상속받은 메서드의 내용을 변경하는 것(change, modify)
+```
+
+<br>
+
+## Question
+
+<br>
+
+## Reference & Additional Resources
