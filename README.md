@@ -12,13 +12,14 @@
 - ### 📖 JAVA
     * [자바란?](./Language/Java/Java.md)
     * [JVM](./Language/Java/JVM(Java%20Virtual%20Machine).md)
+    * [GC(GarbageCollection)](./Language/Java/GarbageCollection.md)  
     * [연산자](./Language/Java/Operator.md)
     * [클래스와 객체](./Language/Java/Class_and_Object.md)
     * [오버로딩과 오버라이딩](./Language/Java/Overloading_and_Overriding.md)
     * [상속](./Language/Java/Inheritance.md)
     * [제어자](#)
     * [다형성](#)
-    * [예외처리](./Language/Java/ExceptionHandling.md)  
+    * [StringBuffeer와 StringBuilder](#)  
     * [지네릭스](./Language/Java/Generics.md)  
     * [람다 표현식](./Language/Java/Lambda.md)  
     
