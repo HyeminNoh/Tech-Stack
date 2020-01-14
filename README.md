@@ -19,7 +19,7 @@
     * [상속](./Language/Java/Inheritance.md)
     * [제어자](#)
     * [다형성](#)
-    * [StringBuffeer와 StringBuilder](#)  
+    * [String과 StringBuffer, StringBuilder](./Language/Java/String.md)  
     * [지네릭스](./Language/Java/Generics.md)  
     * [람다 표현식](./Language/Java/Lambda.md)  
     
