@@ -25,9 +25,10 @@
     
 ## 📕 Data Structure
 
-  * 연결리스트 (Linked List)
-  * 스택 (Stack)
-  * 큐 (Queue)
+  * [자료구조란?](./DataStructure/DataStructure.md)  
+  * [연결리스트 (Linked List)](./DataStructure/LinkedList.md)  
+  * [스택 (Stack)](./DataStructure/Stack.md)  
+  * [큐 (Queue)](./DataStructure/Queue.md)  
   * 트리 (Tree)
   * 그래프 (Graph)
 
