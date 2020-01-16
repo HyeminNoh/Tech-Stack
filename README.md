@@ -26,6 +26,7 @@
 ## 📕 Data Structure
 
   * [자료구조란?](./DataStructure/DataStructure.md)  
+  * [배열](./DataStructure/Array.md)    
   * [연결리스트 (Linked List)](./DataStructure/LinkedList.md)  
   * [스택 (Stack)](./DataStructure/Stack.md)  
   * [큐 (Queue)](./DataStructure/Queue.md)  
