@@ -7,7 +7,7 @@
 
 먼저, `리스트`는 데이터를 순서대로 나열한 자료구조이다. 
 
-<img src="./resources/LinkedList/list.png" style="width: 600px;">  
+<img src="./resources/LinkedList/list.PNG" style="width: 600px;">  
 
 위의 그림 처럼 순서가 있으며 각각의 데이터가 나열되어 있는 형태이다.
 
@@ -117,7 +117,7 @@ public E search(E obj, Comparator<? super E> c){
 
 #### 머리에 노드를 삽입
 
-<img src="./resources/LinkedList/addFirst_list.png" style="width:600px;">
+<img src="./resources/LinkedList/addFirst_list.PNG" style="width:600px;">
 
 삽입 전의 머리 노드(A)에 대한 포인터를 ptr에 대입하고  
 삽입 될 새로운 노드(F)를 생성, 노드의 데이터는 obj, 포인터가 가리키는 곳은 ptr이 된다.  
@@ -125,7 +125,7 @@ public E search(E obj, Comparator<? super E> c){
 
 #### 꼬리에 노드를 삽입
 
-<img src="./resources/LinkedList/addLast_list.png" style="width:600px;">
+<img src="./resources/LinkedList/addLast_list.PNG" style="width:600px;">
 
 리스트가 비어있는지 아닌지를 확인하고 작업을 수행   
 
@@ -163,13 +163,13 @@ public void addLast(E obj){
 
 #### 머리 노드 삭제
 
-<img src="./resources/LinkedList/removeFirst.png" style="width: 600px;">
+<img src="./resources/LinkedList/removeFirst.PNG" style="width: 600px;">
 
 리스트에 노드가 한개만 있어도 오류없이 삭제 가능
 
 #### 꼬리 노드 삭제
 
-<img src="./resources/LinkedList/removeLast.png" style="width:600px;">
+<img src="./resources/LinkedList/removeLast.PNG" style="width:600px;">
 
 리스트에 노드가 몇개 있는지에 따라 해당 작업을 수행  
 * 리스트에 노드가 1개인 경우
@@ -213,7 +213,7 @@ public void removeLast(){
 
 ### 선택한 노드 삭제
 
-<img src="./resources/LinkedList/remove_list.png" style="width:600px;">
+<img src="./resources/LinkedList/remove_list.PNG" style="width:600px;">
 
 선택한 노드가 머리 노드인지 아닌지에 따라 작업을 수행  
 
@@ -266,14 +266,14 @@ public void clear(){
 
 ### 3-1. 원형 리스트
 
-<img src="./resources/LinkedList/circlelist.png" style="width:600px;">
+<img src="./resources/LinkedList/circlelist.PNG" style="width:600px;">
 
 연결 리스트의 꼬리 노드가 머리 노드를 가리키는 구조의 리스트  
 고리 모양으로 나열된 데이터를 저장할 때 알맞은 자료구조  
 
 ### 3-2. 이중 연결 리스트
 
-<img src="./resources/LinkedList/double_linkedlist.png" style="width:600px;">
+<img src="./resources/LinkedList/double_linkedlist.PNG" style="width:600px;">
 
 연결 리스트의 가장 큰 단점은 다음 노드는 찾기 쉽지만 앞쪽의 노드는 찾을 수 없다는 점 이다.  
 이 단점을 개선한 자료구조가 `이중 연결 리스트`이다.  
@@ -291,7 +291,7 @@ class Node<E>{
 
 ### 3-3. 원형 이중 연결 리스트
 
-<img src="./resources/LinkedList/circular doubly linked list.png" style="width:600px;">
+<img src="./resources/LinkedList/circular doubly linked list.PNG" style="width:600px;">
 
 원형 리스트와 이중 연결 리스트의 개념이 합해진 구조의 리스트이다.  
 
