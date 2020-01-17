@@ -18,7 +18,7 @@
     * [오버로딩과 오버라이딩](./Language/Java/Overloading_and_Overriding.md)
     * [상속](./Language/Java/Inheritance.md)
     * [제어자](./Language/Java/Modifier.md)
-    * [다형성](#)
+    * [다형성](./Language/Java/Polymorphism.md)
     * [String과 StringBuffer, StringBuilder](./Language/Java/String.md)  
     * [지네릭스](./Language/Java/Generics.md)  
     * [람다 표현식](./Language/Java/Lambda.md)  
