@@ -161,13 +161,13 @@ public void addLast(E obj){
 
 #### 3) 데이터 삭제
 
-#### 머리 노드 삭제
+#### - 머리 노드 삭제
 
 <img src="./resources/LinkedList/removeFirst.PNG" style="width: 600px;">
 
 리스트에 노드가 한개만 있어도 오류없이 삭제 가능
 
-#### 꼬리 노드 삭제
+#### - 꼬리 노드 삭제
 
 <img src="./resources/LinkedList/removeLast.PNG" style="width:600px;">
 
@@ -211,7 +211,7 @@ public void removeLast(){
 }
 ```
 
-### 선택한 노드 삭제
+#### - 선택한 노드 삭제
 
 <img src="./resources/LinkedList/remove_list.PNG" style="width:600px;">
 
@@ -229,6 +229,8 @@ public void removeLast(){
   어디에도 참조되지 않는 노드 p의 메모리는 자동으로 해지된다.  
 
 (p는 삭제되기 위해 선택된 노드이다.)
+
+#### 코드
 
 ```Java
 //노드 p 삭제
