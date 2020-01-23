@@ -39,7 +39,7 @@
 
 - ### 📖 Search
     * [선형 검색](./Algorithms/Search/LinearSearch.md)
-    * 이진 검색
+    * [이진 검색](./Algorithms/Search/BinearySearch.md)
 
 - ### 📖 Sort  
     * 선택정렬
