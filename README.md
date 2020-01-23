@@ -37,6 +37,10 @@
 
 - [알고리즘이란?](./Algorithms/Algorithms.md)  
 
+- ### 📖 Search
+    * [선형 검색](./Algorithms/Search/LinearSearch.md)
+    * 이진 검색
+
 - ### 📖 Sort  
     * 선택정렬
     * 삽입정렬
