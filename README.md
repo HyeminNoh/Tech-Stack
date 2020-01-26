@@ -29,10 +29,13 @@
   * [배열](./DataStructure/Array.md)    
   * [연결리스트 (Linked List)](./DataStructure/LinkedList.md)  
   * [스택 (Stack)](./DataStructure/Stack.md)  
-  * [큐 (Queue)](./DataStructure/Queue.md)  
-  * [트리 (Tree)](./DataStructure/Tree.md)
-  * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
-  * AVL 트리 (AVL Tree)
+  * [큐 (Queue)](./DataStructure/Queue.md)
+
+  ### 📖 Tree
+    * [트리 (Tree)](./DataStructure/Tree.md)
+    * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
+    * AVL 트리 (AVL Tree)
+    
   * 그래프 (Graph)
 
 ## 📗 Algorithms
