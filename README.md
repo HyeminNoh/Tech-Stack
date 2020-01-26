@@ -47,8 +47,6 @@
     * [선형 검색](./Algorithms/Search/LinearSearch.md)
     * [이진 검색](./Algorithms/Search/BinearySearch.md)
     * 너비우선탐색(BFS) & 깊이우선탐색(DFS)
-    * 이진트리(BinaryTree) & 이진탐색트리(BinarySearchTree)
-    * AVL트리
      
 - ### 📖 Sort  
     * 선택정렬
