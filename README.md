@@ -30,7 +30,7 @@
   * [연결리스트 (Linked List)](./DataStructure/LinkedList.md)  
   * [스택 (Stack)](./DataStructure/Stack.md)  
   * [큐 (Queue)](./DataStructure/Queue.md)  
-  * 트리 (Tree)
+  * [트리 (Tree)](./DataStructure/Tree.md)
   * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
   * AVL 트리 (AVL Tree)
   * 그래프 (Graph)
@@ -44,7 +44,9 @@
     * [선형 검색](./Algorithms/Search/LinearSearch.md)
     * [이진 검색](./Algorithms/Search/BinearySearch.md)
     * 너비우선탐색(BFS) & 깊이우선탐색(DFS)
-    
+    * 이진트리(BinaryTree) & 이진탐색트리(BinarySearchTree)
+    * AVL트리
+     
 - ### 📖 Sort  
     * 선택정렬
     * 삽입정렬
