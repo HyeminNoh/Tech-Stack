@@ -11,7 +11,7 @@
 ## 2. 트리 관련 용어
 트리를 구성하는 요소는 `노드(node)` 와 `가지(간선, edge)`이다.  
   
-<img src="./resources/Tree/tree.PNG" width="400px">  
+<img src="./resources/Tree/tree.png" width="600px">  
   
 * **루트 노드(root node)** : 트리의 가장 윗부분에 위치하는 노드로, 0개 이상의 자식 노드를 가지고 있다.    
   
