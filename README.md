@@ -36,7 +36,7 @@
     * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
     * AVL 트리 (AVL Tree)
 
-  * 그래프 (Graph)
+  * [그래프 (Graph)](./DataStructure/Graph.md)
 
 ## 📗 Algorithms
 
