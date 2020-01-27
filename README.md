@@ -41,7 +41,7 @@
 ## 📗 Algorithms
 
 - [알고리즘이란?](./Algorithms/Algorithms.md)  
-- 시간 복잡도
+- [시간 복잡도](./Algorithms/TimeComplexity.md)
 
 - ### 📖 Search
     * [선형 검색](./Algorithms/Search/LinearSearch.md)
