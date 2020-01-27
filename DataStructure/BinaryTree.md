@@ -1,4 +1,4 @@
-# 이진탐색트리와 AVL트리 (BinaryTree & AVL Tree)
+# 이진탐색트리 (BinaryTree)
 *written by sohyeon, hyemin 💡*
 
 <br>
