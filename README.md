@@ -34,7 +34,7 @@
   * ### 📖 Tree
     * [트리 (Tree)](./DataStructure/Tree.md)
     * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
-    * AVL 트리 (AVL Tree)
+    * [AVL 트리 (AVL Tree)](./DataStructure/AVLTree.md)
 
   * [그래프 (Graph)](./DataStructure/Graph.md)
 
