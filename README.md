@@ -55,7 +55,7 @@
     * 힙정렬
     * [퀵정렬](./Algorithms/Sort/QuickSort.md)
     * 기수정렬
-    * 버블정렬
+    * [버블정렬](./Algorithms/Sort/BubbleSort.md)
 
 - ### 📖 Hash
     * 해시 알고리즘
