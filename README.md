@@ -53,7 +53,7 @@
     * 선택정렬
     * [삽입정렬](./Algorithms/Sort/InsertionSort.md)
     * 힙정렬
-    * 퀵정렬
+    * [퀵정렬](./Algorithms/Sort/QuickSort.md)
     * 기수정렬
     * 버블정렬
 
