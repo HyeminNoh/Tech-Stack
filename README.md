@@ -61,7 +61,7 @@
     * 해시 알고리즘
 
 - ### 📖 etc.
-    * 재귀 알고리즘
+    * [재귀 알고리즘](./Algorithms/Recursive.md)
     * [소수 구하기 (아리스토테네스의 체)](./Algorithms/PrimeNum.md)
     * 문자열 검색
     
