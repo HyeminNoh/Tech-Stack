@@ -19,14 +19,14 @@
 
 * `self-loop` 뿐만 아니라 `loop/circuit`전부 가능하다.  
 
-* 트리와 달리 루트, 부모-자식의 개념이 없다.  
+* 트리와 달리 `루트, 부모-자식의 개념이 없다.`   
 
 * 순회는 `DFS(Depth-First Search)`나 `BFS(Breadth-First Search)`로 이루어진다.  
 
 * 그래프는 `순환(Cyclic)` 혹은 `비순환(Acyclic)`이다.  
     * **순환 그래프(Cycle)**  
     단순 경로의 시작 정점과 종료 정점이 동일한 경우를 말한다.
-    * **비순환 그래프**
+    * **비순환 그래프**  
     사이클이 없는 그래프를 의미한다.
 
 * 그래프는 `방향 그래프(Undirected Graph)`와 `무방향 그래프(Directed Graph)`가 있다.  
@@ -143,5 +143,5 @@ class Node {
 ## Reference & Additional Resources
 * 코딩 인터뷰 완전분석 
 
-* <https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html />
+* [https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html](https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html)
 
