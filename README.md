@@ -33,7 +33,8 @@
 
   * ### 📖 Tree
     * [트리 (Tree)](./DataStructure/Tree.md)
-    * [이진탐색트리(BinarySearchTree)](./DataStructure/BinaryTree.md)
+    * [이진트리(BinarySearch)](./DataStructure/BinaryTree.md)
+    * [이진탐색트리(BinarySearchTree)](./DataStructure/BinarySearchTree.md)
     * [AVL 트리 (AVL Tree)](./DataStructure/AVLTree.md)
 
   * [그래프 (Graph)](./DataStructure/Graph.md)
@@ -46,8 +47,8 @@
 - ### 📖 Search
     * [선형 검색](./Algorithms/Search/LinearSearch.md)
     * [이진 검색](./Algorithms/Search/BinearySearch.md)
-    * 너비우선탐색(BFS)
-    * 깊이우선탐색(DFS)
+    * [너비우선탐색(BFS)](./Algorithms/Search/BreadthFirstSearch.md)
+    * [깊이우선탐색(DFS)](./Algorithms/Search/DepthFirstSearch.md)
      
 - ### 📖 Sort  
     * 선택정렬
@@ -68,7 +69,7 @@
 ## 📙 Network
 
 - ### 📖 TCP/IP 쉽게, 더 쉽게
-    * 컴퓨터 네트워크
+    * [컴퓨터 네트워크](./Network/Computer_Network.md)
     * [네트워크 서비스와 애플리케이션 계층](./Network/ApplicationLayer.md)
     * 트랜스포트 계층
     * [라우팅과 인터넷 계층](./Network/InternetLayer.md)
