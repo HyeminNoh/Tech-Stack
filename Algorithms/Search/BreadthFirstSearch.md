@@ -28,8 +28,8 @@
 6. 앞의 순서와 마찬가지로 모든 노드를 방문하고, 탐색을 종료한다.
 ```
 
-<img src="./resources/BFS_1.png" width="400px">
-<img src="./resources/BFS_2.png" width="410px">
+<img src="./resources/BFS_1.png" height="400px">
+<img src="./resources/BFS_2.png" height="410px">
 
 <br>
 
