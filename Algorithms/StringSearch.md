@@ -48,21 +48,21 @@ class BFmatch {
 				pp = 0;
 			}
 		}
-		if (pp == pat.length())			// 검색 성공!
+		if (pp == pat.length())         // 검색 성공!
 			return pt - pp;
-		return -1;						// 검색 실패!
+		return -1;                      // 검색 실패!
 	}
 
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 
 		System.out.print("텍스트：");
-		String s1 = stdIn.next(); 					// 텍스트용 문자열 
+		String s1 = stdIn.next();         // 텍스트용 문자열 
 
 		System.out.print("패턴：");
-		String s2 = stdIn.next();					// 패턴용 문자열 
+		String s2 = stdIn.next();         // 패턴용 문자열 
 
-		int idx = bfMatch(s1, s2);					// 문자열 s1에서 문자열 s2를 검색
+		int idx = bfMatch(s1, s2);         // 문자열 s1에서 문자열 s2를 검색
 
 		if (idx == -1)
 			System.out.println("텍스트에 패턴이 없습니다.");
@@ -139,9 +139,9 @@ import java.util.Scanner;
 class KMPmatch {
 	// KMP법에 의한 문자열 검색
 	static int kmpMatch(String txt, String pat) {
-		int pt = 1;											// txt 커서
-		int pp = 0;											// pat 커서
-		int[] skip = new int[pat.length() + 1];				// 건너뛰기 표
+		int pt = 1;                                    // txt 커서
+		int pp = 0;                                    // pat 커서
+		int[] skip = new int[pat.length() + 1];        // 건너뛰기 표
 
 		// 건너뛰기 표를 만듭니다.
 		skip[pt] = 0;
@@ -166,21 +166,21 @@ class KMPmatch {
 				pp = skip[pp];
 		}
 
-		if (pp == pat.length())		// pt - pp를 반환합니다.
+		if (pp == pat.length())       // pt - pp를 반환합니다.
 			return pt - pp;
-		return -1;					// 검색 실패
+		return -1;                    // 검색 실패
 	}
 
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 
 		System.out.print("텍스트：");
-		String s1 = stdIn.next(); 					// 텍스트용 문자열 
+		String s1 = stdIn.next();                  // 텍스트용 문자열 
 
 		System.out.print("패턴：");
-		String s2 = stdIn.next();					// 패턴용 문자열 
+		String s2 = stdIn.next();                  // 패턴용 문자열 
 
-		int idx = kmpMatch(s1, s2);	// 문자열 s1에서 문자열 s2를 브루트-포스법으로 검색
+		int idx = kmpMatch(s1, s2);  // 문자열 s1에서 문자열 s2를 브루트-포스법으로 검색
 
 		if (idx == -1)
 			System.out.println("텍스트에 패턴이 없습니다.");
@@ -214,8 +214,8 @@ KMP보다 효율이 우수해 실제로 문자열 탐색에 많이 사용되는 
 텍스트 ABCXDEZCABACABAC
 a	  ABA C				패턴과 텍스트의 문자가 서로 다름
 b	   AB A C			패턴을 1칸 옮겨도 문자가 서로 다르다.
-c       A B AC			패턴을 2칸 옮겨도 문자가 서로 다르다.
-d         A BAC			패턴을 3칸 옮겨도 문자가 서로 다르다.
+c       A B AC          패턴을 2칸 옮겨도 문자가 서로 다르다.
+d         A BAC         패턴을 3칸 옮겨도 문자가 서로 다르다.
 
 패턴안에 들어있지 않은 텍스트를 발견하면 해당 위치까지 건너뛰고 탐색을 수행한다.  
 
@@ -225,8 +225,8 @@ d         A BAC			패턴을 3칸 옮겨도 문자가 서로 다르다.
 
 	         v
 텍스트 ABCXDEZCABACABAC
-a	     ABA C						  
-b	      AB A C			
+a        ABA C						  
+b         AB A C			
 c          A B AC			
 d            A BAC		불일치
 
@@ -234,15 +234,15 @@ Z가 패턴에 존재하지 않으므로 한번에 3칸 옮겨 다시 탐색한�
 
 	             v
 텍스트 ABCXDEZCABACABAC
-a	         ABA C						  
-b	          AB A C   일치
+a            ABA C						  
+b             AB A C   일치
 
 A 문자가 일치하는 것을 확인하고
 해당 위치에서 패턴의 마지막 위치 문자부터 비교한다.
 
 	           <---   
 텍스트 ABCXDEZCABACABAC
-	           ABAC   일치
+               ABAC   일치
 
 모두 일치하여 검색에 성공한다.
 ```
@@ -271,10 +271,10 @@ import java.util.Scanner;
 class BMmatch {
 	// Boyer-Moore법으로 문자열을 검색 
 	static int bmMatch(String txt, String pat) {
-		int pt;								// txt 커서
-		int pp;								// pat 커서
-		int txtLen = txt.length();			// txt의 문자 개수
-		int patLen = pat.length();			// pat의 문자 개수
+		int pt;                             // txt 커서
+		int pp;                             // pat 커서
+		int txtLen = txt.length();          // txt의 문자 개수
+		int patLen = pat.length();          // pat의 문자 개수
 		int[] skip = new int[Character.MAX_VALUE + 1];	// 건너뛰기 표
 
 		// 건너뛰기 표 만들기
