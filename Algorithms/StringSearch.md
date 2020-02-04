@@ -210,39 +210,39 @@ KMP보다 효율이 우수해 실제로 문자열 탐색에 많이 사용되는 
 `ABCXDEZCABACABAC`에서 패턴`ABAC`를 검색하는 경우
 
 ```
-	      v
-텍스트 ABCXDEZCABACABAC
-a	  ABA C				패턴과 텍스트의 문자가 서로 다름
-b	   AB A C			패턴을 1칸 옮겨도 문자가 서로 다르다.
-c       A B AC          패턴을 2칸 옮겨도 문자가 서로 다르다.
-d         A BAC         패턴을 3칸 옮겨도 문자가 서로 다르다.
+	       v
+텍스트 ABC X DEZCABACABAC
+a	   ABA C				패턴과 텍스트의 문자가 서로 다름
+b		AB A C				패턴을 1칸 옮겨도 문자가 서로 다르다.
+c		 A B AC				패턴을 2칸 옮겨도 문자가 서로 다르다.
+d		   A BAC			패턴을 3칸 옮겨도 문자가 서로 다르다.
 
 패턴안에 들어있지 않은 텍스트를 발견하면 해당 위치까지 건너뛰고 탐색을 수행한다.  
 
-	          v
-텍스트 ABCXDEZCABACABAC
-	      ABA C			일치
+	           v
+텍스트 ABCXDEZ C ABACABAC
+		   ABA C			일치
 
-	         v
-텍스트 ABCXDEZCABACABAC
-a        ABA C						  
-b         AB A C			
-c          A B AC			
-d            A BAC		불일치
+	          v
+텍스트 ABCXDE Z CABACABAC
+a		  ABA C						  
+b		   AB A C			
+c			A B AC			
+d			  A BAC			불일치
 
 Z가 패턴에 존재하지 않으므로 한번에 3칸 옮겨 다시 탐색한다.
 
-	             v
-텍스트 ABCXDEZCABACABAC
-a            ABA C						  
-b             AB A C   일치
+	              v
+텍스트 ABCXDEZCAB A CABAC
+a			  ABA C						  
+b			   AB A C		일치
 
 A 문자가 일치하는 것을 확인하고
 해당 위치에서 패턴의 마지막 위치 문자부터 비교한다.
 
-	           <---   
-텍스트 ABCXDEZCABACABAC
-               ABAC   일치
+				<---   
+텍스트 ABCXDEZC ABAC ABAC
+				ABAC		일치
 
 모두 일치하여 검색에 성공한다.
 ```
