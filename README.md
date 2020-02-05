@@ -51,9 +51,9 @@
     * [깊이우선탐색(DFS)](./Algorithms/Search/DepthFirstSearch.md)
      
 - ### 📖 Sort  
-    * 선택정렬
+    * [선택정렬](./Algorithms/Sort/SelectionSort.md)
     * [삽입정렬](./Algorithms/Sort/InsertionSort.md)
-    * 힙정렬
+    * [힙정렬](./Algorithms/Sort/HeapSort.md)
     * [퀵정렬](./Algorithms/Sort/QuickSort.md)
     * 기수정렬
     * [버블정렬](./Algorithms/Sort/BubbleSort.md)
