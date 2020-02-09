@@ -65,8 +65,18 @@
     * [재귀 알고리즘](./Algorithms/Recursive.md)
     * [소수 구하기 (아리스토테네스의 체)](./Algorithms/PrimeNum.md)
     * [문자열 검색](./Algorithms/StringSearch.md)
-    
+
+## 📘 Database
+
+- 데이터베이스란?
+
 ## 📙 Network
+
+- OSI 7계층
+- HTTP 의 GET 과 POST 비교
+- TCP 3-way-handshake
+- TCP와 UDP의 비교
+- HTTP 와 HTTPS
 
 - ### 📖 TCP/IP 쉽게, 더 쉽게
     * [컴퓨터 네트워크](./Network/Computer_Network.md)
@@ -76,3 +86,6 @@
     * 하드웨어와 네트워크 인터페이스 계층
     * 보안
 
+## 📓 OS
+
+## 📔 Design Pattern
