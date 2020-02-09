@@ -55,7 +55,7 @@
     * [삽입정렬](./Algorithms/Sort/InsertionSort.md)
     * [힙정렬](./Algorithms/Sort/HeapSort.md)
     * [퀵정렬](./Algorithms/Sort/QuickSort.md)
-    * 기수정렬
+    * [기수정렬](./Algorithms/Sort/RadixSort.md)
     * [버블정렬](./Algorithms/Sort/BubbleSort.md)
 
 - ### 📖 Hash
