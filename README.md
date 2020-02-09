@@ -77,6 +77,7 @@
 - TCP 3-way-handshake
 - TCP와 UDP의 비교
 - HTTP 와 HTTPS
+- 쿠키(cookie)와 세션(session)
 
 - ### 📖 TCP/IP 쉽게, 더 쉽게
     * [컴퓨터 네트워크](./Network/Computer_Network.md)
