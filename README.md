@@ -59,7 +59,7 @@
     * [버블정렬](./Algorithms/Sort/BubbleSort.md)
 
 - ### 📖 Hash
-    * 해시 알고리즘
+    * [해시 알고리즘](./Algorithms/Hash.md)
 
 - ### 📖 etc.
     * [재귀 알고리즘](./Algorithms/Recursive.md)
@@ -85,7 +85,6 @@
     * [트랜스포트 계층](./Network/TransportLayer.md)
     * [라우팅과 인터넷 계층](./Network/InternetLayer.md)
     * 하드웨어와 네트워크 인터페이스 계층
-    * 보안
 
 ## 📓 OS
 
