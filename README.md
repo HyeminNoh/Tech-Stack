@@ -84,7 +84,7 @@
     * [네트워크 서비스와 애플리케이션 계층](./Network/ApplicationLayer.md)
     * [트랜스포트 계층](./Network/TransportLayer.md)
     * [라우팅과 인터넷 계층](./Network/InternetLayer.md)
-    * 하드웨어와 네트워크 인터페이스 계층
+    * [하드웨어와 네트워크 인터페이스 계층](./Network/NetworkInterfaceLayer.md)
 
 ## 📓 OS
 
