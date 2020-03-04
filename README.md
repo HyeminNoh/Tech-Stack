@@ -76,7 +76,7 @@
 - HTTP 의 GET 과 POST 비교
 - TCP 3-way-handshake
 - TCP와 UDP의 비교
-- HTTP 와 HTTPS
+- [HTTP와 HTTPS의 차이](./Network/HTTP_and_HTTPS.md)
 - 쿠키(cookie)와 세션(session)
 
 - ### 📖 TCP/IP 쉽게, 더 쉽게
