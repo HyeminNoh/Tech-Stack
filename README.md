@@ -72,7 +72,7 @@
 
 ## 📙 Network
 
-- OSI 7계층
+- [OSI 7계층](./Network/OSI7Layers.md)
 - HTTP 의 GET 과 POST 비교
 - TCP 3-way-handshake
 - TCP와 UDP의 비교
