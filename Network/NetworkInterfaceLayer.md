@@ -201,7 +201,6 @@ ARP 헤더
 주요 xDSL 규격에는 금속 케이블을 사용하는 통신 회선인 `ADSL(Asymmetric Digital Subscriber Line)`과 `VDSL(Very high Digital Subscriber Line)` 등이 있다.  
 
 #### 전화 회선을 이용하는 ADSL
-ADSL
 * 통신 거리는 1~3km이다. 
 * 전화에서 사용하지 않는 높은 주파수로 디지털 신호를 전송한다.  
 * 주파수별로 신호를 분기하고나 합친다. 
