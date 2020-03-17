@@ -89,7 +89,7 @@ TCP 헤더 중 `컨트롤 비트`는 현재의 통신 상태를 표현하는 플
 * #### 3-way handshake (연결 성립)
 TCP 통신은 통신하기에 앞서, 접속이 성립하기 위해 3-way handshake를 진행한다.  
 
-<img src="./resources/3-way-handshake.png" height="300px">
+<img src="./resources/3-way-handshake.png" height="390px">
 
 ```
 1. 클라이언트가 서버에게 SYN 패킷을 보낸다. 이때 클라이언트는 SYN을 보내고 SYN/ACK 응답을 기다리는 SYN_SENT 상태가 된다.
@@ -101,7 +101,7 @@ TCP 통신은 통신하기에 앞서, 접속이 성립하기 위해 3-way handsh
 * #### 4-way handshake (연결 해제)
 TCP 통신은 연결 성립 후, 모든 통신이 끝났다면 해제해야 한다.  
   
-<img src="./resources/4-way-handshake.png" height="370px">
+<img src="./resources/4-way-handshake.png" height="450px">
 
 ```
 1. 클라이언트는 서버에게 연결을 종료한다는 FIN 플래그를 보낸다. 
@@ -159,4 +159,4 @@ TCP에는 없는 기능으로 UDP에는 하나의 패킷을 여러 수신지에 
 
 ## Reference & Additional Resources
 * TCP/IP 쉽게, 더 쉽게
-* * [[네트워크 쉽게 이해하기 22편] TCP 3 Way-Handshake & 4 Way-Handshake](https://mindnet.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-22%ED%8E%B8-TCP-3-WayHandshake-4-WayHandshake)
+* [[네트워크 쉽게 이해하기 22편] TCP 3 Way-Handshake & 4 Way-Handshake](https://mindnet.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-22%ED%8E%B8-TCP-3-WayHandshake-4-WayHandshake)
