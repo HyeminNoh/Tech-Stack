@@ -13,7 +13,7 @@
 집 밖이나 회사 건물 밖처럼 비교적 먼 거리에 위치한 컴퓨터들과 연결한 것을 말한다.
 
 ### 전 세계의 컴퓨터를 연결하는 인터넷
-<img src="./resources/internet.jpeg" height="300px">
+<img src="/images/Network/resources/internet.jpeg" height="300px">
 
 `인터넷`은 가장 규모가 큰 네트워크로, 인터넷을 통해 서로 다른 네트워크에 속해 있더라도 데이터를 주고받을 수 있다.  
 
@@ -60,7 +60,7 @@
 
 ## 4. TCP/IP 계층 모델
 
-<img src="./resources/TCP_IP_Model.png" width="400px">
+<img src="/images/Network/resources/TCP_IP_Model.png" width="400px">
 
 ### 애플리케이션 계층
 `애플리케이션 계층`의 역할은 사용자가 실제로 체감할 수 있는 서비스를 제공하는 것이다.  

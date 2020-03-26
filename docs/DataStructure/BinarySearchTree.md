@@ -5,7 +5,7 @@
 
 ## 1. 이진탐색트리 (BinarySearchTree)
 
-<img src="./resources/binarytree_basic.PNG" width="300px">
+<img src="/images/DataStructure/resources/binarytree_basic.PNG" width="300px">
 
 `이진트리`가 다음 조건을 만족할 때 `이진탐색트리`라고 한다.  
 
@@ -19,7 +19,7 @@
 
 #### 이진탐색트리 예시
 
-<img src="./resources/binarytree_ex.PNG" width="500px">
+<img src="/images/DataStructure/resources/binarytree_ex.PNG" width="500px">
 
 이진탐색트리를 중위 순회하면  
 
@@ -41,7 +41,7 @@
 
 ### 1-2. Successor와 Predecessor
 
-<img src="./resources/successor_and_predecessor.PNG" width="600px">
+<img src="/images/DataStructure/resources/successor_and_predecessor.PNG" width="600px">
 
 * Successor  
     임의의 루트노드 x가 존재할 때 x보다 큰 값으로 이루어진 서브트리의 값 중 가장 작은 키 값을 의미한다.
@@ -167,7 +167,7 @@ comparator.compare(key1, key2)
 
 ### 2-4. search 메서드: 키 값으로 검색
 
-<img src="./resources/binarytree_search.PNG" width="600px">
+<img src="/images/DataStructure/resources/binarytree_search.PNG" width="600px">
 
 이진탐색트리에서 원하는 값을 찾으려면  
 루트부터 시작해 현재 선택한 노드의 키 값과 비교하면서 왼쪽, 오른쪽으로 검색을 진행한다.  
@@ -204,7 +204,7 @@ public V search(K key){
 
 ### 2-5. add 메서드: 노드를 삽입
 
-<img src="./resources/binarytree_add.PNG" width="600px">
+<img src="/images/DataStructure/resources/binarytree_add.PNG" width="600px">
 
 이진탐색트리의 조건을 유지하도록 노드를 삽입한다.  
 삽입할 노드의 키와 같은 값을 가지는 노드가 있다면 노드를 삽입해서는 안된다.  

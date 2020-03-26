@@ -151,7 +151,7 @@ op= (복합 대입 연산자) : 다른 연산자(op)와 결합하여 'op='와 �
 <br>
 
 ## 3. 연산자의 우선순위
-<img src="./resources/Operator.png" height="500px" align="center">
+<img src="/images/Java/resources/Operator.png" height="500px" align="center">
  
  ### 1. 산술 > 비교 > 논리 > 대입 순으로 수행된다.
  

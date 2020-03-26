@@ -32,8 +32,8 @@
 6. 없을 경우 종료하고, 있다면 다시 그 노드를 시작 노드로 하여 깊이 우선 탐색을 다시 시작한다. 
 ```
 
-<img src="./resources/DFS_1.png" height="350px">
-<img src="./resources/DFS_2.png" height="350px">
+<img src="/images/Algorithms/resources/DFS_1.png" height="350px">
+<img src="/images/Algorithms/resources/DFS_2.png" height="350px">
 
 * 0번 노드를 시작 노드로 선택하고 이미 방문한 노드는 주황색으로 표시하였다.  
   

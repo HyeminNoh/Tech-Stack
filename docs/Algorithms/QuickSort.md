@@ -31,11 +31,11 @@
 
 - Pivot 설정
 
-<img src="./resources/pivot.png" width="500px" style="margin-left: 40px">
+<img src="/images/Algorithms/resources/pivot.png" width="500px" style="margin-left: 40px">
 
 ### 2) 동작 과정
 
-<img src="./resources/QuickSort.png" width="600px">
+<img src="/images/Algorithms/resources/QuickSort.png" width="600px">
 
 -	임의의 한 요소를 pivot으로 선택
 -	Pivot을 기준으로 작은 값을 왼쪽, 큰 값을 오른쪽으로 이동
@@ -61,7 +61,7 @@
 완전하게 한쪽으로 몰려 그룹이 나뉘는 경우,  
 left가 n-1개의 요소를 갖고 right가 0개의 요소를 가질 떄  
 
-<img src="./resources/Quick_worst.png" width="400px">
+<img src="/images/Algorithms/resources/Quick_worst.png" width="400px">
 
 ```
 T(n)=1+2+⋯+n-1+n=n(n-1)/2
@@ -72,13 +72,13 @@ T(n)=1+2+⋯+n-1+n=n(n-1)/2
 
 pivot값이 계속 중앙에 위채해 left, right가 균등하게 나뉠 때  
 
-<img src="./resources/quick_best_pivot.png" width="300px">
+<img src="/images/Algorithms/resources/quick_best_pivot.png" width="300px">
 
 ```
 T(n) = 2T(n/2)+O(n) ( O(n)은 Divide과정 )
 ```
 
-<img src="./resources/quick_best.png" width="700px">
+<img src="/images/Algorithms/resources/quick_best.png" width="700px">
 
 ```
 ∴T(n)=O(nlog_2⁡n)
@@ -92,17 +92,17 @@ best case에 보통 가까움
 
 - 극단적이게 분할되는 비율이 치우친 경우에도 동일함  
 
-<img src="./resources/quick_average.png" width="700px">
+<img src="/images/Algorithms/resources/quick_average.png" width="700px">
 
-<img src="./resources/quick_average_bigo1.PNG" width="200px">
+<img src="/images/Algorithms/resources/quick_average_bigo1.PNG" width="200px">
 
 아래 증명에 의해 log_2n으로 표현이 가능하다.
 
-<img src="./resources/quick_average_bigo2.PNG" width="200px">
+<img src="/images/Algorithms/resources/quick_average_bigo2.PNG" width="200px">
 
 따라서 T(n)은 아래와 같이 구할 수 있다.
 
-<img src="./resources/quick_average_bigo3.PNG" width="200px">
+<img src="/images/Algorithms/resources/quick_average_bigo3.PNG" width="200px">
 
 ## 4. 예제 코드
 

@@ -9,7 +9,7 @@
 
 ## 2. 동작 방식
 
-<img src="./resources/BubbleSort.PNG" width="500px">
+<img src="/images/Algorithms/resources/BubbleSort.PNG" width="500px">
 
 끝에 두 요소부터 시작해서 값을 비교하고 교환이 필요하면 교환하는 과정을 반복한다.  
 n-1회 비교, 교환을 하고 나면 가장 작은 요소가 맨 앞으로 이동한다.  

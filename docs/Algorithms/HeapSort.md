@@ -12,16 +12,16 @@
 ### 최대 힙(Max Heap)
 부모 노드의 키 값이 자식 노드의 키 값보다 크거나 같은 완전 이진 트리를 말한다.  
 
-<img src="./resources/MaxHeap.png" height="300px">
+<img src="/images/Algorithms/resources/MaxHeap.png" height="300px">
 
 ### 최소 힙(Min Heap)
 부모 노드의 키 값이 자식 노드의 키 값보다 작거나 같은 완전 이진 트리를 말한다.  
 
-<img src="./resources/MinHeap.png" height="300px">
+<img src="/images/Algorithms/resources/MinHeap.png" height="300px">
 
 ### 힙의 요소를 배열에 저장하는 과정
 
-<img src="./resources/MaxHeap.png" height="300px">
+<img src="/images/Algorithms/resources/MaxHeap.png" height="300px">
 
 `  9 => 7 => 6 => 5 => 4 => 3 => 2 => 2 => 1=> 3 ` 와 같이 인덱스의 값을 1씩 늘리면서 배열의 각 요소에 힙의 요소를 대입한다.  
 
@@ -50,15 +50,15 @@
 ```
 
 ### 힙 정렬의 과정
-<img src="./resources/heapsort_1.png" height="300px">
+<img src="/images/Algorithms/resources/heapsort_1.png" height="300px">
 
-<img src="./resources/heapsort_2.png" height="300px">
+<img src="/images/Algorithms/resources/heapsort_2.png" height="300px">
 
-<img src="./resources/heapsort_3.png" height="300px">
+<img src="/images/Algorithms/resources/heapsort_3.png" height="300px">
 
-<img src="./resources/heapsort_4.png" height="300px">
+<img src="/images/Algorithms/resources/heapsort_4.png" height="300px">
 
-<img src="./resources/heapsort_5.png" height="300px">
+<img src="/images/Algorithms/resources/heapsort_5.png" height="300px">
 
 ```
 1. 힙의 루트(a[0])에 있는 가장 큰 값을 꺼내 배열 마지막 요소(a[9])와 바꾼다. 

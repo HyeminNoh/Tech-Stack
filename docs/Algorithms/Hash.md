@@ -18,7 +18,7 @@
 
 ### 2) 해시 테이블 구조
 
-<img src="./resources/hashtable.png" width="500px">
+<img src="/images/Algorithms/resources/hashtable.png" width="500px">
 
 키(Key), 해시함수(Hash Function), 해시(Hash), 값(value), 버킷(Bucket, Slot)로 이루어져 있다.  
 
@@ -56,12 +56,12 @@
 
 해시 값이 인덱스가 되도록 원래의 키 값을 저장한 배열이 `해시 테이블`이다.
 
-<img src="./resources/hashtable2.PNG" width="600px">
+<img src="/images/Algorithms/resources/hashtable2.PNG" width="600px">
 
 새로운 값이 추가되는 경우에는 동일하게 해시값을 구하고 해시테이블에 추가하면 된다.  
 35를 추가한다고 가정하면, 35%19=9 이므로 배열[9]에 값 35를 저장한다.  
 
-<img src="./resources/hashtable3.PNG" width="600px">
+<img src="/images/Algorithms/resources/hashtable3.PNG" width="600px">
 
 값을 추가할 때 배열 요소를 모두 옮기지 않아도 된다는 특징을 볼 수 있다.  
 
@@ -78,7 +78,7 @@
 같은 해시 값을 갖는 데이터를 쇠사슬 모양으로 연결 리스트를 이용해 연결하는 방법이다.  
 오픈 해시법이라고도 한다.
 
-<img src="./resources/hashchain.PNG" width="600px">  
+<img src="/images/Algorithms/resources/hashchain.PNG" width="600px">  
 
 배열의 각 버킷(해시 테이블)에 저장하는 값은  
 그 인덱스를 해시 값으로 하는 연결 리스트의 첫번째 노드에 대한 참조이다.
@@ -223,7 +223,7 @@ public class ChainHash<K,V> {
 
 ### - 요소 삽입
 
-<img src="./resources/openhash.PNG" width="600px">
+<img src="/images/Algorithms/resources/openhash.PNG" width="600px">
 
 이렇게 오픈 주소법은 빈 버킷을 만날 때 까지 `재해시`를 여러 번 반복하므로 선형 탐사법이라고도 합니다.  
 

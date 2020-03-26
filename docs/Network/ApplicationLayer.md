@@ -15,7 +15,7 @@
 
 `어플리케이션 계층`은 사용자가 직접 사용하며 체감할 수 있는 서비스를 제공한다.  
 
-<img src="./resources/applicationLayer.PNG" width="500px">
+<img src="/images/Network/resources/applicationLayer.PNG" width="500px">
 
 네트워크 계층 모델 중 트랜스포트 계층 이하 계층들은 데이터 전송을 담당하고 있으므로  
 데이터 전송 관련 계층을 제외한 모든 영역이 어플리케이션 계층의 범주이다.  

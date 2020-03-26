@@ -95,7 +95,7 @@ for(int i=0; i<N; i++){
 
 ### 1) Big-O 표기법의 종류
 
-<img src="./resources/big-o.png" width="700px">
+<img src="/images/Algorithms/resources/big-o.png" width="700px">
 
 * O(1) - (상수) Constant
 
@@ -138,7 +138,7 @@ for(int i=0; i<N; i++){
 
 ### 2) 성능비교
 
-<img src="./resources/big-o2.jpg" width="500px">
+<img src="/images/Algorithms/resources/big-o2.jpg" width="500px">
 
 성능 순서 : O(1)<O(logn)<O(n)<O(nlogn)<O(n2)<O(n3)<O(2n)  
     
