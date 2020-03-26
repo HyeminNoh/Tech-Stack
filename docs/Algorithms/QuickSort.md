@@ -61,7 +61,7 @@
 완전하게 한쪽으로 몰려 그룹이 나뉘는 경우,  
 left가 n-1개의 요소를 갖고 right가 0개의 요소를 가질 떄  
 
-<img src="./resources/quick_worst.png" width="400px">
+<img src="./resources/Quick_worst.png" width="400px">
 
 ```
 T(n)=1+2+⋯+n-1+n=n(n-1)/2

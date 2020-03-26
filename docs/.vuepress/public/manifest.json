@@ -6,7 +6,7 @@
     {
       "src": "images/logo-144.png",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/png, image/jpeg, image/PNG"
     }
   ],
   "theme_color": "#000000",
