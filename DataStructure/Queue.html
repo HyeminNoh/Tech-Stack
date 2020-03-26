@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>큐 (Queue) | 📚Tech-Stack</title>
+    <meta name="description" content="Tech-Stack Wiki">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/Tech-Stack/images/logo-144.png">
+  <link rel="manifest" href="/Tech-Stack/manifest.json">
+    
+    <link rel="preload" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css" as="style"><link rel="preload" href="/Tech-Stack/assets/js/app.ab305e55.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/2.37c2a9c1.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/31.fab0f8c4.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/4.88da62ba.js" as="script"><link rel="prefetch" href="/Tech-Stack/assets/js/10.10f25c62.js"><link rel="prefetch" href="/Tech-Stack/assets/js/11.d5e3fddc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/12.db89b883.js"><link rel="prefetch" href="/Tech-Stack/assets/js/13.3066a416.js"><link rel="prefetch" href="/Tech-Stack/assets/js/14.c9d735a2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/15.73e5e406.js"><link rel="prefetch" href="/Tech-Stack/assets/js/16.009d0190.js"><link rel="prefetch" href="/Tech-Stack/assets/js/17.6e8a6ddf.js"><link rel="prefetch" href="/Tech-Stack/assets/js/18.fab23ada.js"><link rel="prefetch" href="/Tech-Stack/assets/js/19.39a2439e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/20.e53fc847.js"><link rel="prefetch" href="/Tech-Stack/assets/js/21.d6ce6c96.js"><link rel="prefetch" href="/Tech-Stack/assets/js/22.a97882f2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/23.b707681b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/24.e6441cbd.js"><link rel="prefetch" href="/Tech-Stack/assets/js/25.13bb78de.js"><link rel="prefetch" href="/Tech-Stack/assets/js/26.140ec841.js"><link rel="prefetch" href="/Tech-Stack/assets/js/27.80699186.js"><link rel="prefetch" href="/Tech-Stack/assets/js/28.d03f7b05.js"><link rel="prefetch" href="/Tech-Stack/assets/js/29.88ba7f59.js"><link rel="prefetch" href="/Tech-Stack/assets/js/3.229f236d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/30.fdaf381b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/32.ec9cdf46.js"><link rel="prefetch" href="/Tech-Stack/assets/js/33.9d4e0d49.js"><link rel="prefetch" href="/Tech-Stack/assets/js/34.c3e19da8.js"><link rel="prefetch" href="/Tech-Stack/assets/js/35.093de18b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/36.733f308f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/37.461a2417.js"><link rel="prefetch" href="/Tech-Stack/assets/js/38.58992344.js"><link rel="prefetch" href="/Tech-Stack/assets/js/39.dbcd4b74.js"><link rel="prefetch" href="/Tech-Stack/assets/js/40.fc2521ec.js"><link rel="prefetch" href="/Tech-Stack/assets/js/41.41cc1cfc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/42.e5f5475e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/43.81efa23e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/44.0fe3a784.js"><link rel="prefetch" href="/Tech-Stack/assets/js/45.17b4c4c2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/46.94192a3b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/47.6ed1725f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/48.5cd4da3f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/49.77f6a778.js"><link rel="prefetch" href="/Tech-Stack/assets/js/5.201a4032.js"><link rel="prefetch" href="/Tech-Stack/assets/js/50.1522799e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/51.4942aacc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/52.9427b293.js"><link rel="prefetch" href="/Tech-Stack/assets/js/53.fedf9cdb.js"><link rel="prefetch" href="/Tech-Stack/assets/js/54.981b10fe.js"><link rel="prefetch" href="/Tech-Stack/assets/js/55.08cc7d6d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/56.e6575f88.js"><link rel="prefetch" href="/Tech-Stack/assets/js/6.0ceaedea.js"><link rel="prefetch" href="/Tech-Stack/assets/js/7.e7dad563.js"><link rel="prefetch" href="/Tech-Stack/assets/js/8.e132b549.js"><link rel="prefetch" href="/Tech-Stack/assets/js/9.3ef4a93e.js">
+    <link rel="stylesheet" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Tech-Stack/" class="home-link router-link-active"><!----> <span class="site-name">📚Tech-Stack</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>2. Data Structure</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Tech-Stack/DataStructure/AVLTree.html" class="sidebar-link">AVL트리 (AVL Tree)</a></li><li><a href="/Tech-Stack/DataStructure/Array.html" class="sidebar-link">배열 (Array)</a></li><li><a href="/Tech-Stack/DataStructure/BinarySearchTree.html" class="sidebar-link">이진탐색트리 (BinarySearchTree)</a></li><li><a href="/Tech-Stack/DataStructure/BinaryTree.html" class="sidebar-link">이진트리 (BinaryTree)</a></li><li><a href="/Tech-Stack/DataStructure/DataStructure.html" class="sidebar-link">자료구조란?</a></li><li><a href="/Tech-Stack/DataStructure/Graph.html" class="sidebar-link">그래프(Graph)</a></li><li><a href="/Tech-Stack/DataStructure/LinkedList.html" class="sidebar-link">연결리스트 (LinkedList)</a></li><li><a href="/Tech-Stack/DataStructure/Queue.html" class="active sidebar-link">큐 (Queue)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Tech-Stack/DataStructure/Queue.html#_1-큐란" class="sidebar-link">1. 큐란?</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/DataStructure/Queue.html#_2-배열로-큐-만들기" class="sidebar-link">2. 배열로 큐 만들기</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/DataStructure/Queue.html#_3-링-버퍼로-큐-만들기" class="sidebar-link">3. 링 버퍼로 큐 만들기</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/DataStructure/Queue.html#_4-덱-양방향-대기열-deque-double-ended-queue" class="sidebar-link">4. 덱(양방향 대기열, deque/double ended queue)</a></li></ul></li><li><a href="/Tech-Stack/DataStructure/Stack.html" class="sidebar-link">스택 (Stack)</a></li><li><a href="/Tech-Stack/DataStructure/Tree.html" class="sidebar-link">트리(Tree)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. Algorithms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. Network</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="큐-queue"><a href="#큐-queue" class="header-anchor">#</a> 큐 (Queue)</h1> <p><em>written by sohyeon, hyemin 💡</em></p> <br> <h2 id="_1-큐란"><a href="#_1-큐란" class="header-anchor">#</a> 1. 큐란?</h2> <p><code>큐</code>는 데이터를 일시적으로 쌓아 두기 위한 자료구조이다.<br>
+입출력 순서는 가장 먼저 넣은 데이터를 가장 먼저 꺼내는 <code>선입선출</code>구조를 따른다.</p> <img src="/images/DataStructure/resources/queue.PNG" width="300px"> <div class="language- extra-class"><pre><code>생활에서 볼 수 있는 큐의 예시로는,
+은행 창구에서의 차례를 기다리는 대기, 마트 계산을 위해 기다리는 대기열을 들 수 있다.
+</code></pre></div><h2 id="_2-배열로-큐-만들기"><a href="#_2-배열로-큐-만들기" class="header-anchor">#</a> 2. 배열로 큐 만들기</h2> <p>큐는 배열을 사용하여 구현할 수 있다. 배열을 사용한 큐에 대한 예시이다.</p> <h3 id="_2-1-클래스와-생성자"><a href="#_2-1-클래스와-생성자" class="header-anchor">#</a> 2-1. 클래스와 생성자</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IntQueue</span><span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> max<span class="token punctuation">;</span> <span class="token comment">// 큐의 용량</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> front<span class="token punctuation">;</span> <span class="token comment">// 맨 앞 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> rear<span class="token punctuation">;</span> <span class="token comment">// 맨 뒤 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> num<span class="token punctuation">;</span> <span class="token comment">// 현재의 데이터 수</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> que<span class="token punctuation">;</span> <span class="token comment">// 큐의 본체</span>
+
+	<span class="token comment">// 실행할 때 예외：큐가 비어 있음</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EmptyIntQueueException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 실행할 때 예외：큐가 가득 참</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OverflowIntQueueException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">OverflowIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 생성자</span>
+	<span class="token keyword">public</span> <span class="token class-name">IntQueue</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		max <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
+		<span class="token keyword">try</span> <span class="token punctuation">{</span>
+			que <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>max<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 큐 본체용 배열을 생성</span>
+		<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">OutOfMemoryError</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 생성할 수 없습니다.</span>
+			max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>생성 시 큐는 비어 있으므로 스택 포인터 num, front, rear 모두 0으로 한다.<br>
+매개변수 capacity로 전달받은 값을 스택 용량을 나타내는 max에 복사하고<br>
+요솟수가 max인 배열 que의 본체를 생성한다.</p> <h3 id="_2-2-메서드"><a href="#_2-2-메서드" class="header-anchor">#</a> 2-2. 메서드</h3> <h3 id="_1-데이터-추가-삭제"><a href="#_1-데이터-추가-삭제" class="header-anchor">#</a> 1) 데이터 추가, 삭제</h3> <img src="/images/DataStructure/resources/queue_ex.PNG" width="600px"> <h3 id="데이터-추가-enque"><a href="#데이터-추가-enque" class="header-anchor">#</a> 데이터 추가 - enque</h3> <p>rear의 데이터가 저장된 요소 다음에 데이터를 추가하는 메서드이다.<br>
+큐가 가득차서 enque 할 수 없는 경우 예외 <code>OverflowIntQueueException</code>을 throw한다.<br>
+전달받은 데이터를 넣을 수 있으면 <code>que[rear++]</code>에 저장하고, 현재 데이터 수 num을 증가 시킨다.<br>
+메서드의 반환값은 enque한 값이다.</p> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">enque</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">OverflowIntQueueException</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> max<span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">OverflowIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 큐가 가득 참</span>
+	que<span class="token punctuation">[</span>rear<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+	num<span class="token operator">++</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>rear <span class="token operator">==</span> max<span class="token punctuation">)</span>
+		rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="데이터-삭제-deque"><a href="#데이터-삭제-deque" class="header-anchor">#</a> 데이터 삭제 - deque</h3> <p>front에 위치한 맨 앞의 요소를 꺼낸 다음 그 이후의 요소를 앞으로 옮기는 메서드이다.<br>
+큐가 비어 있어 deque 할 요소가 없는 경우 예외 <code>EmptyIntQueueException</code>을 throw한다.</p> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">deque</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntQueueException</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 큐가 비어 있음</span>
+	<span class="token keyword">int</span> x <span class="token operator">=</span> que<span class="token punctuation">[</span>front<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	num<span class="token operator">--</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>front <span class="token operator">==</span> max<span class="token punctuation">)</span>
+		front <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-그-외"><a href="#_3-그-외" class="header-anchor">#</a> 3) 그 외</h3> <ul><li><p>peek : front에 있는 값을 보는 메서드이다.</p></li> <li><p>indexOf : 배열 que에 x와 같은 값의 데이터가 포함되어 있는지,<br>
+포함되어 있다면 배열의 어디에 들어 있는지를 조사하는 메서드이다.</p></li> <li><p>clear : 큐의 모든 데이터를 삭제하는 메서드</p></li> <li><p>capacity : 용량을 확인하는 메서드</p></li> <li><p>size : 현재 큐에 쌓여있는 데이터 수를 반환하는 메서드</p></li> <li><p>isEmpty : 큐가 비어 있는지 검사하는 메서드</p></li> <li><p>isFull : 큐가 가득 찼는지 검사하는 메서드</p></li></ul> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token comment">// 큐에서 데이터를 피크(머리데이터를 살펴봄)</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntQueueException</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 큐가 비어 있음</span>
+	<span class="token keyword">return</span> que<span class="token punctuation">[</span>front<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐에서 x를 검색하여 index(찾지 못하면 -1)를 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>que<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token comment">// 검색성공</span>
+            <span class="token keyword">return</span> idx<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 검색실패</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐를 비움</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐의 용량을 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">capacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐에 쌓인 데이터 수를 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐가 비어 있는가?</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐가 가득 찼는가?</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">&gt;=</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐 안의 터(이터를 머리→꼬리의 차례로 나타냄</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">dump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;큐가 비었습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>que<span class="token punctuation">[</span><span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-링-버퍼로-큐-만들기"><a href="#_3-링-버퍼로-큐-만들기" class="header-anchor">#</a> 3. 링 버퍼로 큐 만들기</h2> <p><code>링 버퍼</code>는 배열의 처음이 끝과 연결되어있는 자료구조이다.<br> <code>링 버퍼</code>를 활용하면 배열요소를 앞쪽으로 옮기는 작업이 불필요하다.<br>
+논리적으로 첫번째 요소와 마지막 요소를 식별하기 위해 <code>front</code>와 <code>rear</code>변수가 존재한다.</p> <img src="/images/DataStructure/resources/ring_buffer.PNG" width="600px"> <ul><li>front : 맨 처음 요소의 인덱스</li> <li>rear : 맨 끝 요소의 하나 뒤의 인덱스 (다음 요소를 인큐할 위치를 미리 지정)</li></ul> <h3 id="_3-1-클래스와-생성자"><a href="#_3-1-클래스와-생성자" class="header-anchor">#</a> 3-1. 클래스와 생성자</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IntQueue</span><span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> max<span class="token punctuation">;</span>      <span class="token comment">// 큐의 용량</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> front<span class="token punctuation">;</span>    <span class="token comment">// 첫번째 요소 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> rear<span class="token punctuation">;</span>     <span class="token comment">// 마지막 요소 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> num<span class="token punctuation">;</span>      <span class="token comment">// 현재 데이터 수</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> que<span class="token punctuation">;</span>    <span class="token comment">// 큐 본체</span>
+
+	<span class="token comment">// 실행 시 예외: 큐가 비어 있음</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EmptyIntQueueException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">OverflowIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 실행 시 예외 : 큐가 가득 차 있음</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OverflowIntQueueException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">OverflowIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 생성자</span>
+	<span class="token keyword">public</span> <span class="token class-name">IntQueue</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		max <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
+		<span class="token keyword">try</span><span class="token punctuation">{</span>
+			que <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>max<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">OutOfMemoryError</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>front</code>와 <code>rear</code>의 값이 같을 때 큐의 상태는 비어있거나 가득찬 상태이다.<br>
+이 조건만으로 구분을 할 수 없다.</li> <li><code>front</code>와 <code>rear</code>의 값이 같을 경우, 큐의 상태를 구분하기 위해 <code>num</code>변수를 활용<br>
+큐가 비었을 때 <code>num</code>은 0이고 큐가 가득 찼을때 <code>num</code>은 max의 값과 같다.</li></ul> <h3 id="_3-2-메서드"><a href="#_3-2-메서드" class="header-anchor">#</a> 3-2. 메서드</h3> <h3 id="_1-enque"><a href="#_1-enque" class="header-anchor">#</a> 1) enque</h3> <p>큐에 데이터를 인큐하고 인큐된 값을 반환하는 메서드이다.<br>
+rear의 위치에 요소를 추가하고 rear와 num값을 1만큼 증가한다.</p> <p>인큐하기 전 rear의 값이 max-1 값이라면 enque 수행 후 rear값이 max와 같아지게 되는 문제가 발생한다.<br>
+이를 방지하기 위해 rear값이 1만큼 증가했을 때 max와 같아지는 경우 rear를 배열의 처음인 0으로 변경한다.</p> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">enque</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">OverflowIntQueueException</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">&gt;=</span>max<span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">OverflowIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	que<span class="token punctuation">[</span>rear<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+	num<span class="token operator">++</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>rear <span class="token operator">==</span> max<span class="token punctuation">)</span>
+		rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2-deque"><a href="#_2-deque" class="header-anchor">#</a> 2) deque</h3> <p>큐에서 데이터를 디큐하고 그 값을 반환하는 메서드이다.<br>
+front에 저장된 값을 꺼내고 front값을 1만큼 증가한 다음 num을 1만큼 감소시킨다.</p> <p>디큐하기 전 front값이 배열의 끝이라면 디큐 수행 이후에 front값이 max가 되는 문제가 발생한다.<br>
+이를 방지하기 위해 front값이 1만큼 증가했을 때 max와 같아지면 front값을 배열의 처음인 0으로 변경한다.</p> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">deque</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> x <span class="token operator">=</span> que<span class="token punctuation">[</span>front<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	num<span class="token operator">--</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>front <span class="token operator">==</span> max<span class="token punctuation">)</span>
+		front <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-그-외-2"><a href="#_3-그-외-2" class="header-anchor">#</a> 3) 그 외</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token comment">// 큐에서 데이터를 피크 (프런트 데이터를 들여다봄)</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntQueueException</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntQueueException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>				<span class="token comment">// 큐가 비어 있음</span>
+	<span class="token keyword">return</span> que<span class="token punctuation">[</span>front<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐에서 x를 검색하여 인덱스(찾지 못하면 –1)를 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>que<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span>								<span class="token comment">// 검색 성공</span>
+			<span class="token keyword">return</span> idx<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>											<span class="token comment">// 검색 실패</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐를 비움</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐의 용량을 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">capacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐에 쌓여 있는 데이터 수를 반환</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐가 비어 있나요?</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐가 가득 찼나요?</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> num <span class="token operator">&gt;=</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 큐 안의 모든 데이터를 프런트 → 리어 순으로 출력</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">dump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;큐가 비어 있습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span> <span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>que<span class="token punctuation">[</span><span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-덱-양방향-대기열-deque-double-ended-queue"><a href="#_4-덱-양방향-대기열-deque-double-ended-queue" class="header-anchor">#</a> 4. 덱(양방향 대기열, deque/double ended queue)</h2> <p>시작과 끝 지점, 양쪽에서 데이터를 인큐하거나 디큐하는 자료구조이다.</p> <img src="/images/DataStructure/resources/deque.PNG" width="300px"> <h3 id="덱-만들기"><a href="#덱-만들기" class="header-anchor">#</a> 덱 만들기</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IntDeque</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> max<span class="token punctuation">;</span> <span class="token comment">// 덱(deck)의 용량</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> num<span class="token punctuation">;</span> <span class="token comment">// 현재의 데이터 수</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> front<span class="token punctuation">;</span> <span class="token comment">// 맨 앞 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> rear<span class="token punctuation">;</span> <span class="token comment">// 맨 뒤 커서</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> que<span class="token punctuation">;</span> <span class="token comment">// 덱(deck)의 본체</span>
+
+	<span class="token comment">// 실행할 때 예외：큐가 비어 있음</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EmptyIntDequeException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">EmptyIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 실행할 때 예외：큐가 가득 참</span>
+	<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OverflowIntDequeException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">public</span> <span class="token class-name">OverflowIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 생성자</span>
+	<span class="token keyword">public</span> <span class="token class-name">IntDeque</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		max <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
+		<span class="token keyword">try</span> <span class="token punctuation">{</span>
+			que <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>max<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)본체용 배열을 생성</span>
+		<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">OutOfMemoryError</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 생성할 수 없습니다</span>
+			max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)에 데이터를 머리쪽부터 인큐</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">enqueFront</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">OverflowIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> max<span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">OverflowIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)이 가득 참</span>
+		num<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">--</span>front <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			front <span class="token operator">=</span> max <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+		que<span class="token punctuation">[</span>front<span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+		<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)에 데이터를 꼬리쪽부터 인큐</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">enqueRear</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">OverflowIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&gt;=</span> max<span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">OverflowIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)은 가득 참</span>
+		que<span class="token punctuation">[</span>rear<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
+		num<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>rear <span class="token operator">==</span> max<span class="token punctuation">)</span>
+			rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)의 머리부터 데이터를 디큐</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">dequeFront</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)이 비어 있음</span>
+		<span class="token keyword">int</span> x <span class="token operator">=</span> que<span class="token punctuation">[</span>front<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		num<span class="token operator">--</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>front <span class="token operator">==</span> max<span class="token punctuation">)</span>
+			front <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> x<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)의 꼬리부터 데이터를 디큐</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">dequeRear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)이 비어 있음</span>
+		num<span class="token operator">--</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">--</span>rear <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			rear <span class="token operator">=</span> max <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> que<span class="token punctuation">[</span>rear<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)의 머리부터 데이터를 피크(머리데이터를 살펴봄)</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">peekFront</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)이 비어 있음</span>
+		<span class="token keyword">return</span> que<span class="token punctuation">[</span>front<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)의 꼬리부터 데이터를 피크(꼬리데이터를 살펴봄)</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">peekRear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">EmptyIntDequeException</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyIntDequeException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 덱(deck)이 비어 있음</span>
+		<span class="token keyword">return</span> que<span class="token punctuation">[</span>rear <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> max <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">:</span> rear <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)에서 x를 검색하여 index(찾지 못하면 -1)를 반환</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>que<span class="token punctuation">[</span><span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token comment">// 검색성공</span>
+				<span class="token keyword">return</span> i <span class="token operator">+</span> front<span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 검색실패</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)에서 x를 검색하여 머리부터 몇 번 째인가(찾지 못하면 0)를 반환</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">search</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>que<span class="token punctuation">[</span><span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token comment">// 검색성공</span>
+				<span class="token keyword">return</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 검색실패</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)을 비움</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		num <span class="token operator">=</span> front <span class="token operator">=</span> rear <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)의 용량을 반환</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">capacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> max<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)에 쌓인 데이터 수를 반환</span>
+	<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> num<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)이 비어 있는가?</span>
+	<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)이 가득 찼는가?</span>
+	<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> num <span class="token operator">&gt;=</span> max<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 덱(deck)내의 데이터를 머리→꼬리의 차례로 나타냄</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">dump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;덱(deck)이 비었습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>que<span class="token punctuation">[</span><span class="token punctuation">(</span>i <span class="token operator">+</span> front<span class="token punctuation">)</span> <span class="token operator">%</span> max<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/26/2020, 6:26:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Tech-Stack/DataStructure/LinkedList.html" class="prev">
+        연결리스트 (LinkedList)
+      </a></span> <span class="next"><a href="/Tech-Stack/DataStructure/Stack.html">
+        스택 (Stack)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/Tech-Stack/assets/js/app.ab305e55.js" defer></script><script src="/Tech-Stack/assets/js/2.37c2a9c1.js" defer></script><script src="/Tech-Stack/assets/js/31.fab0f8c4.js" defer></script><script src="/Tech-Stack/assets/js/4.88da62ba.js" defer></script>
+  </body>
+</html>

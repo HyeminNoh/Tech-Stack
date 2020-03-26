@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>제어자(modifier) | 📚Tech-Stack</title>
+    <meta name="description" content="Tech-Stack Wiki">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/Tech-Stack/images/logo-144.png">
+  <link rel="manifest" href="/Tech-Stack/manifest.json">
+    
+    <link rel="preload" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css" as="style"><link rel="preload" href="/Tech-Stack/assets/js/app.ab305e55.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/2.37c2a9c1.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/42.e5f5475e.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/4.88da62ba.js" as="script"><link rel="prefetch" href="/Tech-Stack/assets/js/10.10f25c62.js"><link rel="prefetch" href="/Tech-Stack/assets/js/11.d5e3fddc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/12.db89b883.js"><link rel="prefetch" href="/Tech-Stack/assets/js/13.3066a416.js"><link rel="prefetch" href="/Tech-Stack/assets/js/14.c9d735a2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/15.73e5e406.js"><link rel="prefetch" href="/Tech-Stack/assets/js/16.009d0190.js"><link rel="prefetch" href="/Tech-Stack/assets/js/17.6e8a6ddf.js"><link rel="prefetch" href="/Tech-Stack/assets/js/18.fab23ada.js"><link rel="prefetch" href="/Tech-Stack/assets/js/19.39a2439e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/20.e53fc847.js"><link rel="prefetch" href="/Tech-Stack/assets/js/21.d6ce6c96.js"><link rel="prefetch" href="/Tech-Stack/assets/js/22.a97882f2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/23.b707681b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/24.e6441cbd.js"><link rel="prefetch" href="/Tech-Stack/assets/js/25.13bb78de.js"><link rel="prefetch" href="/Tech-Stack/assets/js/26.140ec841.js"><link rel="prefetch" href="/Tech-Stack/assets/js/27.80699186.js"><link rel="prefetch" href="/Tech-Stack/assets/js/28.d03f7b05.js"><link rel="prefetch" href="/Tech-Stack/assets/js/29.88ba7f59.js"><link rel="prefetch" href="/Tech-Stack/assets/js/3.229f236d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/30.fdaf381b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/31.fab0f8c4.js"><link rel="prefetch" href="/Tech-Stack/assets/js/32.ec9cdf46.js"><link rel="prefetch" href="/Tech-Stack/assets/js/33.9d4e0d49.js"><link rel="prefetch" href="/Tech-Stack/assets/js/34.c3e19da8.js"><link rel="prefetch" href="/Tech-Stack/assets/js/35.093de18b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/36.733f308f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/37.461a2417.js"><link rel="prefetch" href="/Tech-Stack/assets/js/38.58992344.js"><link rel="prefetch" href="/Tech-Stack/assets/js/39.dbcd4b74.js"><link rel="prefetch" href="/Tech-Stack/assets/js/40.fc2521ec.js"><link rel="prefetch" href="/Tech-Stack/assets/js/41.41cc1cfc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/43.81efa23e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/44.0fe3a784.js"><link rel="prefetch" href="/Tech-Stack/assets/js/45.17b4c4c2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/46.94192a3b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/47.6ed1725f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/48.5cd4da3f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/49.77f6a778.js"><link rel="prefetch" href="/Tech-Stack/assets/js/5.201a4032.js"><link rel="prefetch" href="/Tech-Stack/assets/js/50.1522799e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/51.4942aacc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/52.9427b293.js"><link rel="prefetch" href="/Tech-Stack/assets/js/53.fedf9cdb.js"><link rel="prefetch" href="/Tech-Stack/assets/js/54.981b10fe.js"><link rel="prefetch" href="/Tech-Stack/assets/js/55.08cc7d6d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/56.e6575f88.js"><link rel="prefetch" href="/Tech-Stack/assets/js/6.0ceaedea.js"><link rel="prefetch" href="/Tech-Stack/assets/js/7.e7dad563.js"><link rel="prefetch" href="/Tech-Stack/assets/js/8.e132b549.js"><link rel="prefetch" href="/Tech-Stack/assets/js/9.3ef4a93e.js">
+    <link rel="stylesheet" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Tech-Stack/" class="home-link router-link-active"><!----> <span class="site-name">📚Tech-Stack</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>1. Java</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Tech-Stack/Java/Class_and_Object.html" class="sidebar-link">클래스와 객체 (Class and Obejct)</a></li><li><a href="/Tech-Stack/Java/ExceptionHandling.html" class="sidebar-link">예외처리 (Exception Handling)</a></li><li><a href="/Tech-Stack/Java/GarbageCollection.html" class="sidebar-link">가바지 컬렉션(Garbage Collection)</a></li><li><a href="/Tech-Stack/Java/Generics.html" class="sidebar-link">지네릭스 (Generics)</a></li><li><a href="/Tech-Stack/Java/Inheritance.html" class="sidebar-link">상속(inheritance)</a></li><li><a href="/Tech-Stack/Java/JVM(Java_Virtual_Machine).html" class="sidebar-link">JVM(Java Virtual Machine)</a></li><li><a href="/Tech-Stack/Java/Java.html" class="sidebar-link">자바란?</a></li><li><a href="/Tech-Stack/Java/Lambda.html" class="sidebar-link">람다 표현식 (Lambda Expression)</a></li><li><a href="/Tech-Stack/Java/Modifier.html" class="active sidebar-link">제어자(modifier)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_1-제어자란" class="sidebar-link">1. 제어자란?</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_2-static-클래스의-공통적인" class="sidebar-link">2. static - 클래스의, 공통적인</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_3-final-마지막의-변경될-수-없는" class="sidebar-link">3. final - 마지막의, 변경될 수 없는</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_4-abstract-추상의-미완성의" class="sidebar-link">4. abstract - 추상의, 미완성의</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_5-접근-제어자-access-modifier" class="sidebar-link">5. 접근 제어자(access modifier)</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#_6-제어자-modifier-의-조합" class="sidebar-link">6. 제어자(modifier)의 조합</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Java/Modifier.html#reference-additional-resources" class="sidebar-link">Reference &amp; Additional Resources</a></li></ul></li><li><a href="/Tech-Stack/Java/Operator.html" class="sidebar-link">Operator(연산자)</a></li><li><a href="/Tech-Stack/Java/Overloading_and_Overriding.html" class="sidebar-link">오버로딩과 오버라이딩 (Overloading and Overriding)</a></li><li><a href="/Tech-Stack/Java/Polymorphism.html" class="sidebar-link">다형성(polymorphism)</a></li><li><a href="/Tech-Stack/Java/String.html" class="sidebar-link">String과 StringBuffer, StringBuilder</a></li><li><a href="/Tech-Stack/Java/Thread.html" class="sidebar-link">쓰레드(Thread)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. Data Structure</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. Algorithms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. Network</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="제어자-modifier"><a href="#제어자-modifier" class="header-anchor">#</a> 제어자(modifier)</h1> <p><em>written by sohyeon, hyemin 💡</em></p> <br> <h2 id="_1-제어자란"><a href="#_1-제어자란" class="header-anchor">#</a> 1. 제어자란?</h2> <p>제어자(modifier)는 클래스, 변수 또는 메서드의 선언부에 함께 사용되어 부가적인 의미를 부여한다.</p> <div class="language- extra-class"><pre class="language-text"><code>접근 제어자 : public, protected, default, private
+그 외 : static, final, abstract, native, transient, synchronized, volatile, strictfp
+</code></pre></div><p>접근 제어자는 하나의 대상에 대해서 public과 private 등 네 가지 중 하나만 선택해서 사용할 수 있다.</p> <br> <h2 id="_2-static-클래스의-공통적인"><a href="#_2-static-클래스의-공통적인" class="header-anchor">#</a> 2. static - 클래스의, 공통적인</h2> <p>인스턴스변수는 하나의 클래스로부터 생성되었더라도 각기 다른 값을 유지하지만, 클래스변수(static멤버변수)는 인스턴스에 관계없이 같은 값을 갖는다.<br>
+그 이유는 <code>모든 인스턴스가 공유하기 때문</code>이다.</p> <p><code>static이 사용될 수 있는 곳 - 멤버변수, 메서드, 초기화 블럭</code></p> <table><thead><tr><th>제어자</th> <th>대상</th> <th>의미</th></tr></thead> <tbody><tr><td>static</td> <td>멤버변수</td> <td>- 모든 인스턴스에 공통적으로 사용되는 클래스변수가 된다.<br>- 클래스변수는 인스턴스를 생성하지 않고도 사용 가능하다.<br>- 클래스가 메모리에 로드될 때 생성된다.</td></tr> <tr><td>static</td> <td>메서드</td> <td>- 인스턴스를 생성하지 않고도 호출이 가능한 static 메서드가 된다.<br>- static메서드 내에서는 인스턴스 멤버들을 직접 사용할 수 없다.</td></tr></tbody></table> <ul><li>인스턴스 멤버를 사용하지 않는 메서드는 static을 붙여서 static메서드로 선언할 것</li> <li>static 메서드로 하는 것이 인스턴스를 생성하지 않고도 호출이 가능해서 더 편리하고 속도도 더 빠르다.</li></ul> <h4 id="ex-예제"><a href="#ex-예제" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>class StaticTest {
+    static int width = 200;          // 클래스 변수 (static변수)
+    static int height = 120;         // 클래스 변수 (static변수)
+
+    static {                         // 클래스 초기화 블럭
+        // static변수의 복잡한 초기화 수행
+    }
+
+    static int max(int a, int b) {   // 클래스 메서드(static메서드)
+        return a &gt; b ? a : b;
+    }
+}
+</code></pre></div><br> <h2 id="_3-final-마지막의-변경될-수-없는"><a href="#_3-final-마지막의-변경될-수-없는" class="header-anchor">#</a> 3. final - 마지막의, 변경될 수 없는</h2> <p>final은 <code>마지막의</code> 또는 <code>변경될 수 없는</code>의 의미를 가지고 있다.</p> <p><code>final이 사용될 수 있는 곳 - 클래스, 메서드, 멤버변수, 지역변수</code></p> <table><thead><tr><th>제어자</th> <th>대상</th> <th>의미</th></tr></thead> <tbody><tr><td>final</td> <td>클래스</td> <td>- 변경될 수 없는 클래스, 확장될 수 없는 클래스가 된다.<br>그래서 final로 지정된 클래스는 다른 클래스의 조상이 될 수 없다.</td></tr> <tr><td>final</td> <td>메서드</td> <td>- 변경될 수 없는 메서드. final로 지정된 메서드는 오버라이딩을 통해 재정의 될 수 없다.</td></tr> <tr><td>final</td> <td>멤버변수, 지역변수</td> <td>- 변수 앞에 final이 붙으면, 값을 변경할 수 없는 상수가 된다.</td></tr></tbody></table> <h4 id="ex-예제-2"><a href="#ex-예제-2" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>final class FinalTest {             // 조상이 될 수 없는 클래스
+    final int MAX_SIZE = 10;        // 값을 변경할 수 없는 멤버변수(상수)
+
+    final void getMaxSize() {       // 오버라이딩할 수 없는 메서드(변경불가)
+        final int LV = MAX_SIZE;    // 값을 변경할 수 없는 지역변수(상수)
+        return MAX_SIZE;
+    }
+}
+</code></pre></div><h3 id="생성자를-이용한-final멤버-변수의-초기화"><a href="#생성자를-이용한-final멤버-변수의-초기화" class="header-anchor">#</a> 생성자를 이용한 final멤버 변수의 초기화</h3> <p>final이 붙은 변수는 상수이므로 일반적으로 선언과 초기화를 동시에 하지만, <code>인스턴스변수의 경우 생성자에서 초기화 되도록</code> 할 수 있다.</p> <p>클래스 내에 <code>매개변수를 갖는 생성자를 선언</code>하여, 인스턴스를 생성할 때 final이 붙은 멤버변수를 초기화하는데 필요한 값을 생성자의 매개변수로부터 제공받는다.</p> <h4 id="ex-예제-3"><a href="#ex-예제-3" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>class Card {
+    final int NUMBER;               // 상수지만 선언과 함께 초기화 하지 않고
+    final String KIND;              // 생성자에서 단 한번만 초기화할 수 있다.
+    static int width = 100;
+    static int height = 250;
+
+    Card(String kind, int num) {
+        KIND = kind;
+        NUMBER = num;
+    }
+
+    Card() {
+        this(&quot;HEART&quot;, 1);
+    }
+}
+</code></pre></div><br> <h2 id="_4-abstract-추상의-미완성의"><a href="#_4-abstract-추상의-미완성의" class="header-anchor">#</a> 4. abstract - 추상의, 미완성의</h2> <p>abstract는 <code>미완성</code>의 의미를 가지고 있다.</p> <p><code>abstract가 사용될 수 있는 곳 - 클래스, 메서드</code></p> <table><thead><tr><th>제어자</th> <th>대상</th> <th>의미</th></tr></thead> <tbody><tr><td>abstract</td> <td>클래스</td> <td>- 클래스 내에 추상 메서드가 선언되어 있음을 의미한다.</td></tr> <tr><td>abstract</td> <td>메서드</td> <td>- 선언부만 작성하고 구현부는 작성하지 않은 추상 메서드임을 알린다.</td></tr></tbody></table> <h4 id="ex-예제-4"><a href="#ex-예제-4" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>abstract class AbstractTest {  // 추상클래스(추상메서드를 포함한 클래스)
+    abstract void move();      // 추상 메서드(구현부가 없는 메서드)
+}
+</code></pre></div><p>이 클래스 자체로는 쓸모가 없지만, <code>다른 클래스가 이 클래스를 상속</code>받아서 일부의 원하는 메서드만 오버라이딩해서 된다는 장점이 있다.</p> <br> <h2 id="_5-접근-제어자-access-modifier"><a href="#_5-접근-제어자-access-modifier" class="header-anchor">#</a> 5. 접근 제어자(access modifier)</h2> <p>접근제어자는 멤버 또는 클래스에 사용되어, 해당하는 멤버 또는 클래스를 <code>외부에서 접근하지 못하도록 제한</code>하는 역할을 한다.</p> <p>클래스나 멤버변수, 메서드, 생성자에 접근 제어자가 지정되어 있지 않다면, 접근 제어자가  <code>default</code>임을 뜻한다.</p> <div class="language- extra-class"><pre class="language-text"><code>접근 제어자가 사용될 수 있는 곳 - 클래스, 멤버변수, 메서드, 생성자
+private : 같은 클래스 내에서만 접근이 가능하다.
+default : 같은 패키지 내에서만 접근이 가능하다.
+protected : 같은 패키지 내에서, 그리고 다른 패키지의 자손 클래스에서 접근이 가능하다.
+public : 접근 제한이 전혀 없다.
+</code></pre></div><img src="/images/Java/resources/access_modifier.png" height="200px" align="center"> <h3 id="대상에-따라-사용할-수-있는-접근-제어자"><a href="#대상에-따라-사용할-수-있는-접근-제어자" class="header-anchor">#</a> 대상에 따라 사용할 수 있는 접근 제어자</h3> <img src="/images/Java/resources/access_modifier1.png" height="200px" align="center"> <h3 id="접근-제어자를-이용한-캡슐화"><a href="#접근-제어자를-이용한-캡슐화" class="header-anchor">#</a> 접근 제어자를 이용한 캡슐화</h3> <p><code>캡슐화(encapsulation)</code> : 객체지향개념에서 데이터가 유효한 값을 유지하도록, 또는 비밀번호와 같은 데이터를 외부에서 함부로 변경하지 못하도록 외부로부터의 접근을 제한하는 것</p> <div class="language- extra-class"><pre class="language-text"><code>접근 제어자를 사용하는 이유
+- 외부로부터 데이터를 보호하기 위해서
+- 외부에는 불필요한, 내부적으로만 사용되는 부분을 감추기 위해서
+</code></pre></div><h4 id="ex-예제-5"><a href="#ex-예제-5" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>public class Time {  // 메소드를 통한 접근 허용
+    private int hour;
+    private int minute;
+    private int second;  // 접근 제어자를 private으로 하여 외부에서 직접 접근하지 못하도록 한다.
+
+    public int getHour() { return hour; }
+    public void setHour(int hour) {
+        if(hour &lt; 0 || hour &gt; 23) return;
+        this.hour = hour;  // 멤버변수의 값을 읽고 변경할 수 있는 public 메서드를 제공함으로써 간접적으로 멤버변수의 값을 다룰 수 있도록 하는 것이 바람직하다.
+    }
+
+    public int getMinute() { return minute; }
+    public void setMinute(int minute) {
+        if(minute &lt; 0 || minute &gt; 59) return;
+        this.minute = minute; 
+    }
+
+    public int getSecond() { return second; }
+    public void setSecond(int second) {
+        if(second &lt; 0 || second &gt; 59) return;
+        this.second = second; 
+    }
+}
+</code></pre></div><h3 id="생성자의-접근-제어자"><a href="#생성자의-접근-제어자" class="header-anchor">#</a> 생성자의 접근 제어자</h3> <p>생성자의 접근 제어자를  <code>private</code>으로 지정하면, 외부에서 생성자에 접근할 수 없으므로 인스턴스를 생성할 수 없다.<br>
+그래도 클래스 내부에서는 인스턴스를 생성할 수 있다.</p> <p>대신 인스턴스를 생성해서 반환해주는 public메서드를 제공함으로써 외부에서 이 클래스의 인스턴스를 사용할 수 있도록 한다.<br>
+이 메서드는 <code>public인 동시에 static</code>이어야 한다.</p> <h4 id="ex-예제-6"><a href="#ex-예제-6" class="header-anchor">#</a> ex) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>class Singleton {
+    ...
+    private static Singleton s = new Singleton(); // getInstance()에서 사용될 수 있도록 인스턴스가 미리 생성되어야 하므로 static이어야 한다.
+    
+    private Singleton() {
+        ...
+    }
+    
+    // 인스턴스를 생성하지 않고도 호출할 수 있어야 하므로 static 이어야 한다.
+    public static Singleton getInstance() {
+        return s;
+    }
+    ...
+}
+</code></pre></div><br> <h2 id="_6-제어자-modifier-의-조합"><a href="#_6-제어자-modifier-의-조합" class="header-anchor">#</a> 6. 제어자(modifier)의 조합</h2> <h3 id="대상에-따라-사용할-수-있는-제어자"><a href="#대상에-따라-사용할-수-있는-제어자" class="header-anchor">#</a> 대상에 따라 사용할 수 있는 제어자</h3> <img src="/images/Java/resources/access_modifier2.png" height="200px" align="center"> <h3 id="제어자를-조합해서-사용할-때-주의할-사항"><a href="#제어자를-조합해서-사용할-때-주의할-사항" class="header-anchor">#</a> 제어자를 조합해서 사용할 때 주의할 사항</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 메서드에 static과 abstract를 함께 사용할 수 없다.
+    - static 메서드는 몸통이 있는 메서드에만 사용할 수 있기 때문이다.
+2. 클래스는 abstract와 final을 동시에 사용할 수 없다.
+    - 클래스에 사용되는 final은 클래스를 확장할 수 없다는 의미이고, abstract는 상속을 통해서 완성되어야 한다는 의미이므로 서로 모순되기 때문이다.
+3. abstract메서드는 접근 제어자가 private일 수 없다.
+    - abstract메서드는 자손클래스에서 구현해주어야 하는데 접근 제어자가 private이면, 자손 클래스에서 접근할 수 없기 때문이다.
+4. 메서드에 private과 final을 같이 사용할 필요는 없다.
+    - 접근 제어자가 private인 메서드는 오버라이딩될 수 없기 때문이다.
+</code></pre></div><br> <h2 id="reference-additional-resources"><a href="#reference-additional-resources" class="header-anchor">#</a> Reference &amp; Additional Resources</h2> <p><a href="https://csw7432.tistory.com/entry/Java-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9E%90-Access-Modifier/" target="_blank" rel="noopener noreferrer">https://csw7432.tistory.com/entry/Java-접근제어자-Access-Modifier/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/26/2020, 6:26:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Tech-Stack/Java/Lambda.html" class="prev">
+        람다 표현식 (Lambda Expression)
+      </a></span> <span class="next"><a href="/Tech-Stack/Java/Operator.html">
+        Operator(연산자)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/Tech-Stack/assets/js/app.ab305e55.js" defer></script><script src="/Tech-Stack/assets/js/2.37c2a9c1.js" defer></script><script src="/Tech-Stack/assets/js/42.e5f5475e.js" defer></script><script src="/Tech-Stack/assets/js/4.88da62ba.js" defer></script>
+  </body>
+</html>

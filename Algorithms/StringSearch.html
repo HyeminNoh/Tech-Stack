@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>문자열 탐색 (String Search) | 📚Tech-Stack</title>
+    <meta name="description" content="Tech-Stack Wiki">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/Tech-Stack/images/logo-144.png">
+  <link rel="manifest" href="/Tech-Stack/manifest.json">
+    
+    <link rel="preload" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css" as="style"><link rel="preload" href="/Tech-Stack/assets/js/app.ab305e55.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/2.37c2a9c1.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/22.a97882f2.js" as="script"><link rel="preload" href="/Tech-Stack/assets/js/4.88da62ba.js" as="script"><link rel="prefetch" href="/Tech-Stack/assets/js/10.10f25c62.js"><link rel="prefetch" href="/Tech-Stack/assets/js/11.d5e3fddc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/12.db89b883.js"><link rel="prefetch" href="/Tech-Stack/assets/js/13.3066a416.js"><link rel="prefetch" href="/Tech-Stack/assets/js/14.c9d735a2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/15.73e5e406.js"><link rel="prefetch" href="/Tech-Stack/assets/js/16.009d0190.js"><link rel="prefetch" href="/Tech-Stack/assets/js/17.6e8a6ddf.js"><link rel="prefetch" href="/Tech-Stack/assets/js/18.fab23ada.js"><link rel="prefetch" href="/Tech-Stack/assets/js/19.39a2439e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/20.e53fc847.js"><link rel="prefetch" href="/Tech-Stack/assets/js/21.d6ce6c96.js"><link rel="prefetch" href="/Tech-Stack/assets/js/23.b707681b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/24.e6441cbd.js"><link rel="prefetch" href="/Tech-Stack/assets/js/25.13bb78de.js"><link rel="prefetch" href="/Tech-Stack/assets/js/26.140ec841.js"><link rel="prefetch" href="/Tech-Stack/assets/js/27.80699186.js"><link rel="prefetch" href="/Tech-Stack/assets/js/28.d03f7b05.js"><link rel="prefetch" href="/Tech-Stack/assets/js/29.88ba7f59.js"><link rel="prefetch" href="/Tech-Stack/assets/js/3.229f236d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/30.fdaf381b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/31.fab0f8c4.js"><link rel="prefetch" href="/Tech-Stack/assets/js/32.ec9cdf46.js"><link rel="prefetch" href="/Tech-Stack/assets/js/33.9d4e0d49.js"><link rel="prefetch" href="/Tech-Stack/assets/js/34.c3e19da8.js"><link rel="prefetch" href="/Tech-Stack/assets/js/35.093de18b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/36.733f308f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/37.461a2417.js"><link rel="prefetch" href="/Tech-Stack/assets/js/38.58992344.js"><link rel="prefetch" href="/Tech-Stack/assets/js/39.dbcd4b74.js"><link rel="prefetch" href="/Tech-Stack/assets/js/40.fc2521ec.js"><link rel="prefetch" href="/Tech-Stack/assets/js/41.41cc1cfc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/42.e5f5475e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/43.81efa23e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/44.0fe3a784.js"><link rel="prefetch" href="/Tech-Stack/assets/js/45.17b4c4c2.js"><link rel="prefetch" href="/Tech-Stack/assets/js/46.94192a3b.js"><link rel="prefetch" href="/Tech-Stack/assets/js/47.6ed1725f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/48.5cd4da3f.js"><link rel="prefetch" href="/Tech-Stack/assets/js/49.77f6a778.js"><link rel="prefetch" href="/Tech-Stack/assets/js/5.201a4032.js"><link rel="prefetch" href="/Tech-Stack/assets/js/50.1522799e.js"><link rel="prefetch" href="/Tech-Stack/assets/js/51.4942aacc.js"><link rel="prefetch" href="/Tech-Stack/assets/js/52.9427b293.js"><link rel="prefetch" href="/Tech-Stack/assets/js/53.fedf9cdb.js"><link rel="prefetch" href="/Tech-Stack/assets/js/54.981b10fe.js"><link rel="prefetch" href="/Tech-Stack/assets/js/55.08cc7d6d.js"><link rel="prefetch" href="/Tech-Stack/assets/js/56.e6575f88.js"><link rel="prefetch" href="/Tech-Stack/assets/js/6.0ceaedea.js"><link rel="prefetch" href="/Tech-Stack/assets/js/7.e7dad563.js"><link rel="prefetch" href="/Tech-Stack/assets/js/8.e132b549.js"><link rel="prefetch" href="/Tech-Stack/assets/js/9.3ef4a93e.js">
+    <link rel="stylesheet" href="/Tech-Stack/assets/css/0.styles.6ec522c8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Tech-Stack/" class="home-link router-link-active"><!----> <span class="site-name">📚Tech-Stack</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(shjang1013)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HyeminNoh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub(HyeminNoh)
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. Data Structure</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>3. Algorithms</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Tech-Stack/Algorithms/Algorithms.html" class="sidebar-link">알고리즘이란?</a></li><li><a href="/Tech-Stack/Algorithms/BinarySearch.html" class="sidebar-link">이진검색</a></li><li><a href="/Tech-Stack/Algorithms/BreadthFirstSearch.html" class="sidebar-link">너비 우선 탐색(Breadth First Search : BFS)</a></li><li><a href="/Tech-Stack/Algorithms/BubbleSort.html" class="sidebar-link">버블 정렬 (Bubble Sort)</a></li><li><a href="/Tech-Stack/Algorithms/DepthFirstSearch.html" class="sidebar-link">깊이 우선 탐색(Depth First Search : BFS)</a></li><li><a href="/Tech-Stack/Algorithms/Hash.html" class="sidebar-link">해시 알고리즘 (Hash)</a></li><li><a href="/Tech-Stack/Algorithms/HeapSort.html" class="sidebar-link">힙 정렬 (Heap Sort)</a></li><li><a href="/Tech-Stack/Algorithms/InsertionSort.html" class="sidebar-link">삽입 정렬 (Insertion Sort)</a></li><li><a href="/Tech-Stack/Algorithms/LinearSearch.html" class="sidebar-link">선형검색</a></li><li><a href="/Tech-Stack/Algorithms/PrimeNum.html" class="sidebar-link">소수 구하기 (아리스토테네스의 체)</a></li><li><a href="/Tech-Stack/Algorithms/QuickSort.html" class="sidebar-link">퀵 정렬 (Quick Sort)</a></li><li><a href="/Tech-Stack/Algorithms/RadixSort.html" class="sidebar-link">기수 정렬 (Radix Sort)</a></li><li><a href="/Tech-Stack/Algorithms/Recursive.html" class="sidebar-link">재귀 알고리즘 (Recursive Algorithm)</a></li><li><a href="/Tech-Stack/Algorithms/SelectionSort.html" class="sidebar-link">선택 정렬 (Selection Sort)</a></li><li><a href="/Tech-Stack/Algorithms/StringSearch.html" class="active sidebar-link">문자열 탐색 (String Search)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Tech-Stack/Algorithms/StringSearch.html#문자열-탐색" class="sidebar-link">문자열 탐색</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Algorithms/StringSearch.html#_1-브루트-포스" class="sidebar-link">1. 브루트-포스</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Algorithms/StringSearch.html#_2-kmp-알고리즘" class="sidebar-link">2. KMP 알고리즘</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Algorithms/StringSearch.html#_3-boyer-moore-알고리즘" class="sidebar-link">3. Boyer-Moore 알고리즘</a></li><li class="sidebar-sub-header"><a href="/Tech-Stack/Algorithms/StringSearch.html#reference-additional-resources" class="sidebar-link">Reference &amp; Additional Resources</a></li></ul></li><li><a href="/Tech-Stack/Algorithms/TimeComplexity.html" class="sidebar-link">시간복잡도와 Big-O 표기법 (Time Complexity &amp; Big-O)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. Network</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="문자열-탐색-string-search"><a href="#문자열-탐색-string-search" class="header-anchor">#</a> 문자열 탐색 (String Search)</h1> <p><em>written by sohyeon, hyemin 💡</em></p> <br> <h2 id="문자열-탐색"><a href="#문자열-탐색" class="header-anchor">#</a> 문자열 탐색</h2> <p>어떤 문자열 안에 탐색하고자 하는 문자열이 들어 있는지 조사하고 그 위치를 찾아내는 것이다.<br>
+탐색할 문자열을 <code>패턴</code> 어떤 문자열을 원본 <code>텍스트</code>라고 표현하겠다.</p> <h2 id="_1-브루트-포스"><a href="#_1-브루트-포스" class="header-anchor">#</a> 1. 브루트-포스</h2> <p>선형 검색을 확장한 알고리즘으로 가능한 모든 경우에 대해 모두 직접 해 보는 알고리즘이다.<br>
+가장 단순한 문자열 탐색 방법으로 단순법, 소박법이라고도 한다.</p> <p>문자열 탐색에 <code>브루트-포스</code>를 적용할 경우</p> <ol><li><p>패턴을 텍스트의 첫문자부터 겹치는 확인</p> <ul><li>모든 패턴이 일치할 경우 탐색 성공</li></ul></li> <li><p>패턴과 다른 문자가 나타나면 검색을 중단</p></li> <li><p>텍스트의 검사 위치를 1칸 옮겨 탐색 진행</p> <ul><li>모든 패턴이 일치할 경우 탐색 성공</li> <li>다른 문자가 나타나면 3의 과정을 반복</li></ul></li></ol> <p>수행 시간 면에서 비효율적인 알고리즘이다.</p> <h3 id="예제-코드"><a href="#예제-코드" class="header-anchor">#</a> 예제 코드</h3> <p>브루트-포스법으로 문자열을 검색하는 프로그램</p> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">BFmatch</span> <span class="token punctuation">{</span>
+	<span class="token comment">// 브루트-포스법으로 문자열을 검색하는 메서드 </span>
+	<span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">bfMatch</span><span class="token punctuation">(</span><span class="token class-name">String</span> txt<span class="token punctuation">,</span> <span class="token class-name">String</span> pat<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> pt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>		<span class="token comment">// txt 커서</span>
+		<span class="token keyword">int</span> pp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>		<span class="token comment">// pat 커서</span>
+
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>pt <span class="token operator">!=</span> txt<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> pp <span class="token operator">!=</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>txt<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span> <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				pt<span class="token operator">++</span><span class="token punctuation">;</span>
+				pp<span class="token operator">++</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+				pt <span class="token operator">=</span> pt <span class="token operator">-</span> pp <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+				pp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>pp <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>         <span class="token comment">// 검색 성공!</span>
+			<span class="token keyword">return</span> pt <span class="token operator">-</span> pp<span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>                      <span class="token comment">// 검색 실패!</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">Scanner</span> stdIn <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s1 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// 텍스트용 문자열 </span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s2 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// 패턴용 문자열 </span>
+
+		<span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token function">bfMatch</span><span class="token punctuation">(</span>s1<span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// 문자열 s1에서 문자열 s2를 검색</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>idx <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트에 패턴이 없습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token comment">// 일치하는 문자 바로 앞까지의 길이를 구합니다.</span>
+			<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> idx<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+				len <span class="token operator">+=</span> s1<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+			len <span class="token operator">+=</span> s2<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">(</span>idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;번째 문자부터 일치합니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span> <span class="token operator">+</span> s1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：%%%ds\n&quot;</span><span class="token punctuation">,</span> len<span class="token punctuation">)</span><span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>텍스트에서 패턴을 검색하여 텍스트의 위치를 반환한다.</li> <li>텍스트에 패턴이 여러개 있는 경우 가장 앞쪽에 위치한 텍스트의 인덱스를 반환하고,<br>
+검색에 실패하면 -1을 반환한다.</li></ul> <h2 id="_2-kmp-알고리즘"><a href="#_2-kmp-알고리즘" class="header-anchor">#</a> 2. KMP 알고리즘</h2> <p>브루트-포스보다 효율적이게 문자열을 탐색하는 알고리즘이다.<br> <code>KMP</code>는 검사했던 위치 결과를 활용하는 알고리즘이다.</p> <p><code>KMP</code>는 예제를 보는 것이 이해하기 쉽다.</p> <h3 id="예시"><a href="#예시" class="header-anchor">#</a> 예시</h3> <p>텍스트 <code>ZABCABXACCADEF</code>에서 패턴 <code>ABCABD</code>를 검색하는 예시</p> <div class="language- extra-class"><pre class="language-text"><code>패턴의 표 
+ABCABD
+-00120
+
+       0123456789
+텍스트 ZABCABXACC  
+패턴   ABCABD  
+       x
+
+첫번째 문자와 패턴이 일치하지 않는다 1칸 뒤로 이동시켜 탐색한다.
+
+       0123456789
+텍스트 ZABCABXACC  
+패턴    ABCABD  
+        ooooox  
+
+패턴의 D가 일치하지 않는다. 
+위의 표를 보면 패턴에 겹치는 부분이 존재하며 AB까지는 패턴과 텍스트가 일치했다.
+해당 인덱스로 이동해 탐색한다.
+
+       0123456789
+텍스트 ZABCABXACC  
+패턴       ABCABD  
+           oox  
+
+더이상 이동 불가 탐색 실패
+
+</code></pre></div><p>패턴을 한칸씩 이동하지 않고 패턴의 겹치는 부분을 찾아내 다시 시작할 위치를 구한다.<br>
+패턴을 최소한만 이동시켜 효율을 높인다.<br>
+몇번째 문자부터 다시 검색할지 구하기 위한 표를 만들어 계산한다.</p> <h3 id="예제-코드-2"><a href="#예제-코드-2" class="header-anchor">#</a> 예제 코드</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+<span class="token comment">// KMP법에 의한 문자열 검색</span>
+
+<span class="token keyword">class</span> <span class="token class-name">KMPmatch</span> <span class="token punctuation">{</span>
+	<span class="token comment">// KMP법에 의한 문자열 검색</span>
+	<span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">kmpMatch</span><span class="token punctuation">(</span><span class="token class-name">String</span> txt<span class="token punctuation">,</span> <span class="token class-name">String</span> pat<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> pt <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>                                    <span class="token comment">// txt 커서</span>
+		<span class="token keyword">int</span> pp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>                                    <span class="token comment">// pat 커서</span>
+		<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> skip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token comment">// 건너뛰기 표</span>
+
+		<span class="token comment">// 건너뛰기 표를 만듭니다.</span>
+		skip<span class="token punctuation">[</span>pt<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>pt <span class="token operator">!=</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span> <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token punctuation">)</span>
+				skip<span class="token punctuation">[</span><span class="token operator">++</span>pt<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">++</span>pp<span class="token punctuation">;</span>
+			<span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>pp <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+				skip<span class="token punctuation">[</span><span class="token operator">++</span>pt<span class="token punctuation">]</span> <span class="token operator">=</span> pp<span class="token punctuation">;</span>
+			<span class="token keyword">else</span>
+				pp <span class="token operator">=</span> skip<span class="token punctuation">[</span>pp<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token comment">// 검색</span>
+		pt <span class="token operator">=</span> pp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>pt <span class="token operator">!=</span> txt<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> pp <span class="token operator">!=</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>txt<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span> <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				pt<span class="token operator">++</span><span class="token punctuation">;</span>
+				pp<span class="token operator">++</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>pp <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+				pt<span class="token operator">++</span><span class="token punctuation">;</span>
+			<span class="token keyword">else</span>
+				pp <span class="token operator">=</span> skip<span class="token punctuation">[</span>pp<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>pp <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>       <span class="token comment">// pt - pp를 반환합니다.</span>
+			<span class="token keyword">return</span> pt <span class="token operator">-</span> pp<span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>                    <span class="token comment">// 검색 실패</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">Scanner</span> stdIn <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s1 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                  <span class="token comment">// 텍스트용 문자열 </span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s2 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                  <span class="token comment">// 패턴용 문자열 </span>
+
+		<span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token function">kmpMatch</span><span class="token punctuation">(</span>s1<span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 문자열 s1에서 문자열 s2를 브루트-포스법으로 검색</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>idx <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트에 패턴이 없습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> idx<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+				len <span class="token operator">+=</span> s1<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+			len <span class="token operator">+=</span> s2<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">(</span>idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;번째 문자와 일치합니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span> <span class="token operator">+</span> s1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：%%%ds\n&quot;</span><span class="token punctuation">,</span> len<span class="token punctuation">)</span><span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-boyer-moore-알고리즘"><a href="#_3-boyer-moore-알고리즘" class="header-anchor">#</a> 3. Boyer-Moore 알고리즘</h2> <p>KMP보다 효율이 우수해 실제로 문자열 탐색에 많이 사용되는 알고리즘이다.</p> <p>패턴의 마지막 문자부터 앞쪽으로 검사를 진행하면서<br>
+일치하지 않는 문자가 있으면 미리 준비한 표에 따라 패턴을 옮길 크기를 정한다.</p> <h3 id="예시-2"><a href="#예시-2" class="header-anchor">#</a> 예시</h3> <p><code>ABCXDEZCABACABAC</code>에서 패턴<code>ABAC</code>를 검색하는 경우</p> <div class="language- extra-class"><pre class="language-text"><code>           v
+텍스트 ABC X DEZCABACABAC
+a      ABA C				패턴과 텍스트의 문자가 서로 다름
+b       AB A C				패턴을 1칸 옮겨도 문자가 서로 다르다.
+c        A B AC				패턴을 2칸 옮겨도 문자가 서로 다르다.
+d          A BAC			패턴을 3칸 옮겨도 문자가 서로 다르다.
+
+패턴안에 들어있지 않은 텍스트를 발견하면 해당 위치까지 건너뛰고 탐색을 수행한다.  
+
+               v
+텍스트 ABCXDEZ C ABACABAC
+           ABA C			일치
+
+              v
+텍스트 ABCXDE Z CABACABAC
+a         ABA C						  
+b          AB A C			
+c           A B AC			
+d             A BAC			불일치
+
+Z가 패턴에 존재하지 않으므로 한번에 3칸 옮겨 다시 탐색한다.
+
+                  v
+텍스트 ABCXDEZCAB A CABAC
+a             ABA C						  
+b              AB A C		일치
+
+A 문자가 일치하는 것을 확인하고
+해당 위치에서 패턴의 마지막 위치 문자부터 비교한다.
+
+                &lt;---   
+텍스트 ABCXDEZC ABAC ABAC
+                ABAC		일치
+
+모두 일치하여 검색에 성공한다.
+</code></pre></div><p>패턴의 길이를 n이라고 하면 현재 검사하고 있는 텍스트의 문자 위치로부터<br>
+다음에 검사할 패턴의 마지막 문자 위치가 n만큼 떨어질 수 있도록 패턴을 이동 시킨다.</p> <p>각각의 문자를 만났을 때 패턴을 옮길 크기를 저장할 표를 만들어야 한다.</p> <h3 id="표-만들기"><a href="#표-만들기" class="header-anchor">#</a> 표 만들기</h3> <p>n = 패턴 문자열의 길이</p> <ul><li><p>패턴에 들어 있지 않은 문자를 만난 경우</p> <ol><li>패턴을 옮길 크기는 n이다.</li></ol></li> <li><p>패턴에 들어 있는 문자를 만난 경우</p> <ol><li>마지막에 나오는 위치의 인덱스가 k이면 패턴을 옮길 크기는 n-k-1이다.</li> <li>같은 문자가 패턴 안에 중복해서 들어있지 않다면 패턴을 옮길 크기는 n이다.</li></ol></li></ul> <h3 id="예제-코드-3"><a href="#예제-코드-3" class="header-anchor">#</a> 예제 코드</h3> <div class="language-Java extra-class"><pre class="language-java"><code><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">BMmatch</span> <span class="token punctuation">{</span>
+	<span class="token comment">// Boyer-Moore법으로 문자열을 검색 </span>
+	<span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">bmMatch</span><span class="token punctuation">(</span><span class="token class-name">String</span> txt<span class="token punctuation">,</span> <span class="token class-name">String</span> pat<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> pt<span class="token punctuation">;</span>                             <span class="token comment">// txt 커서</span>
+		<span class="token keyword">int</span> pp<span class="token punctuation">;</span>                             <span class="token comment">// pat 커서</span>
+		<span class="token keyword">int</span> txtLen <span class="token operator">=</span> txt<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment">// txt의 문자 개수</span>
+		<span class="token keyword">int</span> patLen <span class="token operator">=</span> pat<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment">// pat의 문자 개수</span>
+		<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> skip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token class-name">Character</span><span class="token punctuation">.</span>MAX_VALUE <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>	<span class="token comment">// 건너뛰기 표</span>
+
+		<span class="token comment">// 건너뛰기 표 만들기</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span>pt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> pt <span class="token operator">&lt;=</span> <span class="token class-name">Character</span><span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span> pt<span class="token operator">++</span><span class="token punctuation">)</span>
+			skip<span class="token punctuation">[</span>pt<span class="token punctuation">]</span> <span class="token operator">=</span> patLen<span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span>pt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> pt <span class="token operator">&lt;</span> patLen <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> pt<span class="token operator">++</span><span class="token punctuation">)</span>
+			skip<span class="token punctuation">[</span>pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> patLen <span class="token operator">-</span> pt <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>	<span class="token comment">// pt == patLen - 1</span>
+		<span class="token comment">// 검색</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>pt <span class="token operator">&lt;</span> txtLen<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			pp <span class="token operator">=</span> patLen <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>				<span class="token comment">// pat의 끝 문자에 주목</span>
+
+			<span class="token keyword">while</span> <span class="token punctuation">(</span>txt<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span> <span class="token operator">==</span> pat<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>pp <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+					<span class="token keyword">return</span> pt<span class="token punctuation">;</span>	<span class="token comment">// 검색 성공</span>
+				pp<span class="token operator">--</span><span class="token punctuation">;</span>
+				pt<span class="token operator">--</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			pt <span class="token operator">+=</span> <span class="token punctuation">(</span>skip<span class="token punctuation">[</span>txt<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> patLen <span class="token operator">-</span> pp<span class="token punctuation">)</span> <span class="token operator">?</span> skip<span class="token punctuation">[</span>txt<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>pt<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">:</span> patLen <span class="token operator">-</span> pp<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>				<span class="token comment">// 검색 실패</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">Scanner</span> stdIn <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s1 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 					<span class="token comment">// 텍스트용 문자열 </span>
+
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">String</span> s2 <span class="token operator">=</span> stdIn<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>					<span class="token comment">// 패턴용 문자열 </span>
+
+		<span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token function">bmMatch</span><span class="token punctuation">(</span>s1<span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 문자열 s1에서 문자열 s2를 BM법으로 검색</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>idx <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트에 패턴이 없습니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> idx<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+				len <span class="token operator">+=</span> s1<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+			len <span class="token operator">+=</span> s2<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">(</span>idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;번째 문자와 일치합니다.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;텍스트：&quot;</span> <span class="token operator">+</span> s1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&quot;패턴：%%%ds\n&quot;</span><span class="token punctuation">,</span> len<span class="token punctuation">)</span><span class="token punctuation">,</span> s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <h2 id="reference-additional-resources"><a href="#reference-additional-resources" class="header-anchor">#</a> Reference &amp; Additional Resources</h2> <blockquote><p>Do it! 자료구조와 함께 배우는 알고리즘 입문, 자바 편</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/26/2020, 6:26:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Tech-Stack/Algorithms/SelectionSort.html" class="prev">
+        선택 정렬 (Selection Sort)
+      </a></span> <span class="next"><a href="/Tech-Stack/Algorithms/TimeComplexity.html">
+        시간복잡도와 Big-O 표기법 (Time Complexity &amp; Big-O)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/Tech-Stack/assets/js/app.ab305e55.js" defer></script><script src="/Tech-Stack/assets/js/2.37c2a9c1.js" defer></script><script src="/Tech-Stack/assets/js/22.a97882f2.js" defer></script><script src="/Tech-Stack/assets/js/4.88da62ba.js" defer></script>
+  </body>
+</html>
