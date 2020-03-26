@@ -9,7 +9,7 @@
   
 이진 트리는 노드가 왼쪽 자식과 오른쪽 자식을 가지며, 각 노드의 자식은 2명 이하만 유지해야 한다.
   
-<img src="./resources/Tree/binarytree.png" height="300px">
+<img src="./resources/binarytree.png" height="300px">
   
 예를 들어 노드 B의 왼쪽 자식은 D, 오른쪽 자식은 E이다.  
     
@@ -37,7 +37,7 @@
   
 #### ex) 예제
   
-<img src="./resources/Tree/full_binarytree.png" height="200px">
+<img src="./resources/full_binarytree.png" height="200px">
   
 `노드의 개수 : 7, 간선의 개수 : 6`
     
@@ -46,9 +46,9 @@
 
 #### ex) 예제
 
-<img src="./resources/Tree/min_binarytree.png" height="200px" display="inline-block">
+<img src="./resources/min_binarytree.png" height="200px" display="inline-block">
 
-<img src="./resources/Tree/full_binarytree.png" height="200px" display="inline-block">
+<img src="./resources/full_binarytree.png" height="200px" display="inline-block">
 
 `최소 노드 개수 : 3, 최대 노드 개수 : 1 + 2 + 4 = 7`
   
@@ -57,9 +57,9 @@
   
 #### ex) 예제
 
-<img src="./resources/Tree/min_binarytree.png" height="200px" display="inline-block">
+<img src="./resources/min_binarytree.png" height="200px" display="inline-block">
 
-<img src="./resources/Tree/3-node_binarytree.png" height="150px" display="inline-block">
+<img src="./resources/3-node_binarytree.png" height="150px" display="inline-block">
 
 `최대 높이 : 3, 최소 높이 : 2`
 
@@ -70,7 +70,7 @@
 ### 포화 이진 트리(full binary tree)
 트리의 각 레벨에 노드가 꽉 차 있는 이진 트리를 의미한다.
 
-<img src="./resources/Tree/full_binarytree.png" height="200px">
+<img src="./resources/full_binarytree.png" height="200px">
 
 ### 완전 이진 트리(complete binary tree)
 
@@ -78,7 +78,7 @@
   
 마지막 레벨에서는 노드가 꽉 차 있지 않아도 되지만 중간에 빈 곳이 있어서는 안된다. 
 
-<img src="./resources/Tree/complete_binarytree.png" height="250px">
+<img src="./resources/complete_binarytree.png" height="250px">
 
 <br>
 

@@ -61,7 +61,7 @@
 완전하게 한쪽으로 몰려 그룹이 나뉘는 경우,  
 left가 n-1개의 요소를 갖고 right가 0개의 요소를 가질 떄  
 
-<img src="./resources/quick_worst.png" width="400px">
+<img src="./resources/Quick_worst.png" width="400px">
 
 ```
 T(n)=1+2+⋯+n-1+n=n(n-1)/2
@@ -94,15 +94,15 @@ best case에 보통 가까움
 
 <img src="./resources/quick_average.png" width="700px">
 
-<img src="./resources/quick_average_bigo1.png" width="200px">
+<img src="./resources/quick_average_bigo1.PNG" width="200px">
 
 아래 증명에 의해 log_2n으로 표현이 가능하다.
 
-<img src="./resources/quick_average_bigo2.png" width="200px">
+<img src="./resources/quick_average_bigo2.PNG" width="200px">
 
 따라서 T(n)은 아래와 같이 구할 수 있다.
 
-<img src="./resources/quick_average_bigo3.png" width="200px">
+<img src="./resources/quick_average_bigo3.PNG" width="200px">
 
 ## 4. 예제 코드
 

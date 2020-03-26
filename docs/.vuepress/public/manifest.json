@@ -1,0 +1,16 @@
+{
+  "name": "Tech-Stack",
+  "short_name": "Sohyeon & Hyemin",
+  "start_url": "/?utm_source=homescreen",
+  "icons": [
+    {
+      "src": "images/logo-144.png",
+      "sizes": "144x144",
+      "type": "image/png, image/jpeg, image/PNG"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
