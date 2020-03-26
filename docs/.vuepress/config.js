@@ -6,7 +6,7 @@ module.exports = {
   email: 'shrmffkfk@naver.com',
   base: "/Tech-Stack/",
   head: [
-    ['link', { rel: 'icon', href: `/images/logo-144.png` }],
+    ['link', { rel: 'icon', href: '/images/logo-144.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }]
   ],
   plugins: [
