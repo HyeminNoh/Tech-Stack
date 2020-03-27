@@ -10,7 +10,7 @@
 * 조상 클래스 : 상속해주는 클래스 ( 부모(parent)클래스, 상위(super)클래스, 기반(base)클래스 )
 * 자손 클래스 : 상속 받는 클래스 ( 자식(child)클래스, 하위(sub)클래스, 파생된(derived)클래스 )
 
-<img src="/images/Java/resources/inheritance.png" height="400px" align="center">
+<img src="../resources/inheritance.png" height="400px" align="center">
 
 ```
 * 생성자와 초기화 블럭은 상속되지 않는다. 멤버만 상속된다.

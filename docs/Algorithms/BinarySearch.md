@@ -18,7 +18,7 @@
 또한 검사한 요소를 하나씩 제외시키는 선형 검색과는 다르게  
 이진 검색은 검색 요소가 해당 단계에서 다음에 검색할 범위의 중간 지점으로 단숨에 이동하는 특징을 갖는다.  
 
-<img src="/images/Algorithms/resources/binarysearch2.PNG" width="600px">
+<img src="./images/Algorithms/resources/binarysearch2.PNG" width="600px">
 
 위의 그림은 성공했을 때의 예시이다.  
 마지막 과정처럼 a[pc]와 key를 비교하여 같으면 검색에 성공하여 과정이 끝난다.  
