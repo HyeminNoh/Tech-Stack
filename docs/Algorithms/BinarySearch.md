@@ -10,7 +10,7 @@
 아래는 n개의 요소가 오름차순으로 늘어선 배열 a에서 키를 이진 검색으로 검색하는 과정을 표현한 것이다.  
 `pl`은 검색 범위의 맨 앞 인덱스, `pr`은 맨끝 인덱스, `pc`는 중앙 인덱스라고 지정한다.  
 
-<img src="~@images/Algorithms/resources/binarysearch.PNG" width="600px">
+<img src="docs/Algorithms/resources/binarysearch.PNG" width="600px">
 
 검색을 시작할 때 `pl`은 0, `pr`은 n-1, `pc`는 (n-1)/2로 초기화이다.  
 

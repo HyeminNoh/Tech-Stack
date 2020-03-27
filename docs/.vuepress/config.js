@@ -9,13 +9,6 @@ module.exports = {
     ['link', { rel: 'icon', href: '/images/logo-144.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }]
   ],
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@images': '../public/images'
-      }
-    }
-  },
   plugins: [
     '@vuepress/back-to-top',
     ['@vuepress/pwa', {
