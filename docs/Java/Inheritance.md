@@ -17,7 +17,7 @@
 * 자손 클래스의 멤버 개수는 조상 클래스보다 항상 같거나 많다.
 ```
 
-<img src="/images/Java/resources/inheritance1.png" height="400px" align="center">
+<img src="./resources/inheritance1.png" height="400px" align="center">
 
 ```
 * 클래스 Child와 Child2가 모두 Parent클래스를 상속받고 있다.
@@ -150,11 +150,6 @@ class Card {
 ## 5. Object 클래스 - 모든 클래스의 조상
 `Object클래스`는 모든 클래스 상속계층도의 최상위에 있는 조상클래스  
 다른 클래스로부터 상속을 받는다고 하더라도 상속계층도를 따라 조상클래스, 조상클래스의 조상클래스를 찾아 올라가다 보면 결국 마지막 최상위 조상은 Object클래스일 것이다.  
-
-<br>
-
-## Question
-
 <br>
 
 ## Reference & Additional Resources
