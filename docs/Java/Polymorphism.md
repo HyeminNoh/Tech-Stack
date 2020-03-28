@@ -16,7 +16,7 @@ CaptionTV 인스턴스 2개를 생성하고, 참조변수 c와 t가 생성된 �
 
 실제 인스턴스가 CaptionTV 타입이라 할지라도, 참조변수 t로는 CaptionTV 인스턴스의 모든 멤버를 사용할 수 없다.  
   
-<img src="/images/Java/resources/polymorphism.jpeg" height="200px" align="center">
+<img src="./resources/polymorphism.jpeg" height="200px" align="center">
   
 `둘 다 같은 타입의 인스턴스지만 참조변수의 타입에 따라 사용할 수 있는 멤버의 개수가 달라진다.`
 
@@ -103,8 +103,6 @@ at CastingTest2.main(CastingTest2.java:8)
 서로 상속관계에 있는 타입간의 형변환은 양방향으로 자유롭게 수행될 수 있으나, 참조변수가 가리키는 인스턴스의 자손타입으로 형변환은 허용되지 않는다.
 그래서 참조변수가 가리키는 인스턴스의 타입이 무엇인지 확인하는 것이 중요하다.
 ```
-
-## Question
 
 <br>
 

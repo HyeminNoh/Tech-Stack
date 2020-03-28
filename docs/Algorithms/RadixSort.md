@@ -12,7 +12,7 @@
 
 ## 2. 동작 방식
 
-<img src="/images/Algorithms/resources/RadixSort.jpeg" height="400px">
+<img src="./resources/RadixSort.jpeg" height="400px">
 
 `10개의 버켓(bucket)`을 만들어서 입력 데이터를 일의 자릿수부터 각 자릿수의 값에 따라 버켓에 넣는다.  
 그리고 위에서부터 아래로 순차적으로 버켓 안에 들어 있는 숫자들을 읽음으로써 정렬된 숫자 리스트를 얻을 수 있다.  

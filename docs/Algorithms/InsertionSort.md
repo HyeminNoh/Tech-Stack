@@ -12,17 +12,17 @@
 
 ## 2. 동작방식
 
-<img src="/images/Algorithms/resources/InsertionSort.png" width="600px">
+<img src="./resources/InsertionSort.png" width="600px">
 
 key값을 정렬된 배열 부분과 비교하여 알맞은 위치에 삽입
 
 삽입 전, `x`는 정렬되지 않은 부분의 첫번째 요소로 선택된 키 값이다.
 
-<img src="/images/Algorithms/resources/InsertPosition1.png" width="400px">
+<img src="./resources/InsertPosition1.png" width="400px">
 
 삽입 후, 삽입 된 부분에서 `x`가 들어갈 알맞은 위치에 삽입하게 된다.
 
-<img src="/images/Algorithms/resources/InsertPosition2.png" width="400px">
+<img src="./resources/InsertPosition2.png" width="400px">
 
 정렬되지 않은 항목 중 첫번째 항목이 다음 key값으로 지정된다.
 
@@ -43,7 +43,7 @@ key값을 정렬된 배열 부분과 비교하여 알맞은 위치에 삽입
 
 ## 4. 시간복잡도
 
-<img src="/images/Algorithms/resources/InsertionSort_Psudo.png" width="500px">
+<img src="./resources/InsertionSort_Psudo.png" width="500px">
 
 ```
 T(n) = c1n+c2(n−1)+c4(n−1)+c5(n(n+1)/2−1)+c6(n(n−1)/2)+c7(n(n−1)/2)+c8(n−1)

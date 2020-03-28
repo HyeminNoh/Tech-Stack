@@ -14,7 +14,7 @@
 <br>
 
 ## 2. JVM의 구조
-<img src="/images/Java/resources/JVM.png" height="400px" align="center">
+<img src="./resources/JVM.png" height="400px" align="center">
 
 ### Class Loader(클래스 로더)  
 자바 컴파일러를 사용해서 `.java` 파일을 `.class(바이트코드)` 파일로 컴파일함. 이후, Class Loader를 통해 JVM에 `.class` 파일을 로드하고, 링크를 통해 배치하는 작업을 수행한다.

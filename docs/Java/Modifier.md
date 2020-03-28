@@ -128,11 +128,11 @@ protected : 같은 패키지 내에서, 그리고 다른 패키지의 자손 클
 public : 접근 제한이 전혀 없다.
 ```
 
-<img src="/images/Java/resources/access_modifier.png" height="200px" align="center">
+<img src="./resources/access_modifier.png" height="200px" align="center">
 
 ### 대상에 따라 사용할 수 있는 접근 제어자 
 
-<img src="/images/Java/resources/access_modifier1.png" height="200px" align="center">
+<img src="./resources/access_modifier1.png" height="200px" align="center">
 
 ### 접근 제어자를 이용한 캡슐화
 `캡슐화(encapsulation)` : 객체지향개념에서 데이터가 유효한 값을 유지하도록, 또는 비밀번호와 같은 데이터를 외부에서 함부로 변경하지 못하도록 외부로부터의 접근을 제한하는 것
@@ -199,7 +199,7 @@ class Singleton {
 ## 6. 제어자(modifier)의 조합
 ### 대상에 따라 사용할 수 있는 제어자
 
-<img src="/images/Java/resources/access_modifier2.png" height="200px" align="center">
+<img src="./resources/access_modifier2.png" height="200px" align="center">
 
 ### 제어자를 조합해서 사용할 때 주의할 사항
 ```

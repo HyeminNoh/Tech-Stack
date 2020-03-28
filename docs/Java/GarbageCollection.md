@@ -165,7 +165,7 @@ stop-the-world 시간이 더 길기 때문에 Compaction 작업이 얼마나 자
 ### 4-5. G1 GC
 
 <div style="text-align:center; height: 300px;"><img src="https://d2.naver.com/content/images/2015/06/helloworld-1329-6.png"/></div>
-
+  
 다음 그림에서 보다시피, G1 GC는 바둑판의 각 영역에 객체를 할당하고 GC를 실행한다.  
 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행한다.  
 즉, 지금까지 설명한 Young의 세가지 영역에서 데이터가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다.  

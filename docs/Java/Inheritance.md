@@ -10,14 +10,14 @@
 * 조상 클래스 : 상속해주는 클래스 ( 부모(parent)클래스, 상위(super)클래스, 기반(base)클래스 )
 * 자손 클래스 : 상속 받는 클래스 ( 자식(child)클래스, 하위(sub)클래스, 파생된(derived)클래스 )
 
-<img src="./resources/inheritance.png" height="400px" align="center">
+<img src="./resources/inheritance.png" height="80%" align="center">
 
 ```
 * 생성자와 초기화 블럭은 상속되지 않는다. 멤버만 상속된다.
 * 자손 클래스의 멤버 개수는 조상 클래스보다 항상 같거나 많다.
 ```
 
-<img src="./resources/inheritance1.png" height="400px" align="center">
+<img src="./resources/inheritance1.png" height="80%" align="center">
 
 ```
 * 클래스 Child와 Child2가 모두 Parent클래스를 상속받고 있다.
@@ -139,6 +139,7 @@ class Card {
 }
 ```
 * toString( )은 모든 클래스의 조상인 Object클래스에 정의된 것으로, 어떤 종류의 객체에 대해서도 toString( ) 호출하는 것이 가능하다.
+
 <br>
 
 ## 4. 단일 상속(single inheritance)

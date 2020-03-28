@@ -11,7 +11,7 @@
 
 ## 2. 동작 방식
 
-<img src="/images/Algorithms/resources/SelectionSort.png" height="400px">
+<img src="./resources/SelectionSort.png" height="400px">
 
 ```
 1. 가장 작은 값의 요소인 1을 선택해 정렬을 시작하고, 6과 교환한다.

@@ -116,9 +116,5 @@ class ThreadEx1_2 implements Runnable {
 
 <br>
 
-## Question
-
-<br>
-
 ## Reference & Additional Resources
 
