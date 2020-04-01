@@ -20,7 +20,7 @@
 
 ## 객체와 인스턴스
 
-![인스턴스화](/images/Java/resources/instantiate.PNG "width:500px;")  
+![인스턴스화](./resources/instantiate.jpg "width:500px;")  
 
 객체와 인스턴스는 같은 의미이지만,  
 
