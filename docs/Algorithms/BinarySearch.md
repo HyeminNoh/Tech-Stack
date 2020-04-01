@@ -10,7 +10,7 @@
 아래는 n개의 요소가 오름차순으로 늘어선 배열 a에서 키를 이진 검색으로 검색하는 과정을 표현한 것이다.  
 `pl`은 검색 범위의 맨 앞 인덱스, `pr`은 맨끝 인덱스, `pc`는 중앙 인덱스라고 지정한다.  
 
-<img src="/Algorithms/resources/binarysearch.PNG" width="600px">
+<img src="./resources/binarysearch.jpg" width="600px">
 
 검색을 시작할 때 `pl`은 0, `pr`은 n-1, `pc`는 (n-1)/2로 초기화이다.  
 
@@ -18,7 +18,7 @@
 또한 검사한 요소를 하나씩 제외시키는 선형 검색과는 다르게  
 이진 검색은 검색 요소가 해당 단계에서 다음에 검색할 범위의 중간 지점으로 단숨에 이동하는 특징을 갖는다.  
 
-<img src="/Algorithms/resources/binarysearch2.PNG" width="600px">
+<img src="./resources/binarysearch2.jpg" width="600px">
 
 위의 그림은 성공했을 때의 예시이다.  
 마지막 과정처럼 a[pc]와 key를 비교하여 같으면 검색에 성공하여 과정이 끝난다.  

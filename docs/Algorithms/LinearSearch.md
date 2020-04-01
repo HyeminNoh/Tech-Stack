@@ -12,7 +12,7 @@
 
 배열에서 값 2를 선형검색하는 예시
 
-<img src="/images/Algorithms/resources/linearsearch.PNG" width="500px">
+<img src="./resources/linearsearch.jpg" width="500px">
 
 위의 그림은 검색에 성공한 경우입니다.  
 
@@ -68,7 +68,7 @@ class SeqSearch{
 
 ### 보초법 예시
 
-<img src="/images/Algorithms/resources/sentinel.PNG" width="500px">
+<img src="./resources/sentinel.jpg" width="500px">
 
 검색을 시작하기 전에 검색하고자 하는 키 값을 맨 끝 요소에 저장한다.  
 이 저장하는 값을 `보초(sentinel)`라고 한다.  

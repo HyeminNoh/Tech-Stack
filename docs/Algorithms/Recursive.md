@@ -39,7 +39,7 @@ class Factorial{
 
 #### 22와 8의 최대공약수를 구하는 과정 예시
 
-<img src="/images/Algorithms/resources/gcd.PNG" width="500px">
+<img src="./resources/gcd.jpg" width="500px">
 
 1. 두 정수를 두 변의 길이로 하는 직사각형을 만든다.  
 2. 직사각형을 정사각형으로 완전히 채운다.

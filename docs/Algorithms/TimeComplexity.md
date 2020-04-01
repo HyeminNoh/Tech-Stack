@@ -95,7 +95,7 @@ for(int i=0; i<N; i++){
 
 ### 1) Big-O 표기법의 종류
 
-<img src="./resources/big-o.png" width="700px">
+<img src="./resources/big-o.jpg" width="700px">
 
 * O(1) - (상수) Constant
 
