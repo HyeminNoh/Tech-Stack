@@ -8,7 +8,7 @@
 `스택`은 데이터를 일시적으로 저장하기 위한 자료구조이다.  
 입출력 순서는 가장 나중에 넣은 데이터를 가장 먼저 꺼내는 `후입선출`의 순서를 따른다.  
 
-<img src="/images/DataStructure/resources/stack.PNG" width="400px">
+<img src="/images/DataStructure/resources/stack.jpg" width="400px">
 
     자바 프로그램에서 메서드를 호출하고 실행할 때 프로그램 내부에서 스택을 사용한다.  
 
@@ -30,7 +30,7 @@ class IntStack{
 }
 ```
 
-<img src="/images/DataStructure/resources/stack_ex.PNG" width="500px">
+<img src="/images/DataStructure/resources/stack_ex.jpg" width="500px">
 
 * max : 스택의 용량, 스택에 쌓을 수 있는 최대 데이터 수를 나타내는 필드
 
