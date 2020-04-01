@@ -26,7 +26,7 @@
 ### 포트 번호의 범위
 포트 번호는 0~65535번까지 사용할 수 있고, `웰 노운 포트(well-known ports), 레지스터드 포트(registered ports), 다이나믹 포트(dynamic ports)`의 세 종류로 구분된다.  
 
-<img src="/images/Network/resources/port.png" height="100px">
+<img src="./resources/port.png" height="100px">
 
 `웰 노운 포트`는 서버 프로그램이 수신 대기할 때 사용하는 포트이다.  
 `레지스터드 포트`는 벤더가 할당받아 사용하는 포트이다.
@@ -60,7 +60,7 @@ HTTP인 경우 서버 측에서 수신 대기하는 포트 번호는 80번이고
 ### TCP 헤더의 구조
 TCP의 세그먼트는 데이터 본체에 TCP 헤더가 붙은 형태로 구성된다.  
 
-<img src="/images/Network/resources/TCP_Header.png" height="350px">
+<img src="./resources/TCP_Header.png" height="350px">
 
 * `일련번호(sequence number)` : 송신한 바이트 수
 * `확인 응답 번호(acknowledgement number)` : 수신한 바이트 수
@@ -89,7 +89,7 @@ TCP 헤더 중 `컨트롤 비트`는 현재의 통신 상태를 표현하는 플
 * #### 3-way handshake (연결 성립)
 TCP 통신은 통신하기에 앞서, 접속이 성립하기 위해 3-way handshake를 진행한다.  
 
-<img src="/images/Network/resources/3-way-handshake.png" height="390px">
+<img src="./resources/3-way-handshake.png" height="390px">
 
 ```
 1. 클라이언트가 서버에게 SYN 패킷을 보낸다. 이때 클라이언트는 SYN을 보내고 SYN/ACK 응답을 기다리는 SYN_SENT 상태가 된다.
@@ -101,7 +101,7 @@ TCP 통신은 통신하기에 앞서, 접속이 성립하기 위해 3-way handsh
 * #### 4-way handshake (연결 해제)
 TCP 통신은 연결 성립 후, 모든 통신이 끝났다면 해제해야 한다.  
   
-<img src="/images/Network/resources/4-way-handshake.png" height="450px">
+<img src="./resources/4-way-handshake.png" height="450px">
 
 ```
 1. 클라이언트는 서버에게 연결을 종료한다는 FIN 플래그를 보낸다. 
@@ -120,7 +120,7 @@ TCP 통신은 연결 성립 후, 모든 통신이 끝났다면 해제해야 한�
 이때 만약 수신 측 컴퓨터의 성능이 낮다면 `데이터가 들어오는 속도보다 처리하는 속도가 느려져` 문제가 될 수 있다.  
 그래서 수신 측은 응답을 보낼 때 `윈도우 사이즈를 설정`하여 `현재 어느 정도까지 수신할 수 있는지`를 수시로 알려주게 된다.  
 
-<img src="/images/Network/resources/flow_control.jpeg" height="350px">
+<img src="./resources/flow_control.jpeg" height="350px">
 
 ### 혼잡 제어
 `혼잡 제어`는 `송신 측(호스트)의 데이터 전달`과 `네트워크(라우터)의 데이터 처리 속도 차이`를 해결하기 위한 기법이다.  
@@ -141,7 +141,7 @@ TCP 통신은 연결 성립 후, 모든 통신이 끝났다면 해제해야 한�
 ### UDP 헤더 구조
 UDP에서는 패킷에 해당하는 것을 `데이터그램`이라고 부른다.  
   
-<img src="/images/Network/resources/UDP_Header.png" height="170px"> 
+<img src="./resources/UDP_Header.png" height="170px"> 
   
 * `패킷 길이(UDP length)` : 헤더 길이와 데이터 길이의 합계
 * `체크섬(checksum)` : 데이터가 훼손되었는지 확인하기 위한 정보

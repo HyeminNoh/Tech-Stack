@@ -31,7 +31,7 @@
 TCP 통신을 이용하여 데이터를 전송하기 위해 `네트워크 연결을 설정(Connection Establish) 하는 과정`  
 * 즉, TCP/IP 프로토콜을 이용하여 통신을 하는 응용 프로그램이 데이터를 전송하기 전에 먼저 정확한 전송을 보장하기 위해 상대방 컴퓨터와 사전에 세션을 수립하는 과정을 의미한다.  
 
-<img src="/images/Network/resources/3-way-handshake.png" height="390px">
+<img src="./resources/3-way-handshake.png" height="390px">
 
 1. `Client -> Server: SYN`
     * Client가 연결 요청 메시지 전송(SYN)한다.  
@@ -48,7 +48,7 @@ TCP 통신을 이용하여 데이터를 전송하기 위해 `네트워크 연결
 ### 4-way handshake
 TCP의 `연결을 해제(Connection Termination)하는 과정`
 
-<img src="/images/Network/resources/4-way-handshake.png" height="450px">
+<img src="./resources/4-way-handshake.png" height="450px">
 
 1. `Client -> Server: FIN`
     * Client가 연결을 종료하겠다는 FIN 플래그를 전송한다.  
