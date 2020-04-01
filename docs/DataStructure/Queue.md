@@ -8,7 +8,7 @@
 `큐`는 데이터를 일시적으로 쌓아 두기 위한 자료구조이다.  
 입출력 순서는 가장 먼저 넣은 데이터를 가장 먼저 꺼내는 `선입선출`구조를 따른다.  
 
-<img src="/images/DataStructure/resources/queue.jpg" width="300px">
+<img src="./resources/queue.jpg" width="300px">
 
     생활에서 볼 수 있는 큐의 예시로는,
     은행 창구에서의 차례를 기다리는 대기, 마트 계산을 위해 기다리는 대기열을 들 수 있다.
@@ -60,7 +60,7 @@ public class IntQueue{
 
 ### 1) 데이터 추가, 삭제
 
-<img src="/images/DataStructure/resources/queue_ex.jpg" width="600px">
+<img src="./resources/queue_ex.jpg" width="600px">
 
 ### 데이터 추가 - enque
 
@@ -176,7 +176,7 @@ public void dump() {
 `링 버퍼`를 활용하면 배열요소를 앞쪽으로 옮기는 작업이 불필요하다.  
 논리적으로 첫번째 요소와 마지막 요소를 식별하기 위해 `front`와 `rear`변수가 존재한다.  
 
-<img src="/images/DataStructure/resources/ring_buffer.jpg" width="600px">
+<img src="./resources/ring_buffer.jpg" width="600px">
 
 * front : 맨 처음 요소의 인덱스
 * rear : 맨 끝 요소의 하나 뒤의 인덱스 (다음 요소를 인큐할 위치를 미리 지정)
@@ -322,7 +322,7 @@ public void dump() {
 
 시작과 끝 지점, 양쪽에서 데이터를 인큐하거나 디큐하는 자료구조이다.  
 
-<img src="/images/DataStructure/resources/deque.jpg" width="300px">
+<img src="./resources/deque.jpg" width="300px">
 
 ### 덱 만들기
 
