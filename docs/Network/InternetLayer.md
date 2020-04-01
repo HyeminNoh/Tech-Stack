@@ -16,7 +16,7 @@
 
 ## 1. 인터넷 계층의 역할
 
-<img src="/images/Network/resources/internetLayer.PNG" width="400px">
+<img src="./resources/internetLayer.jpg" width="400px">
 
 `인터넷 계층`은 네트워크 인터페이스 계층과 협력하여 다른 컴퓨터에게 데이터를 전달하는 역할을 한다.  
 
@@ -46,7 +46,7 @@ IP 어드레스를 결정할 때 사용하는 비트의 길이가 서로 다르�
 
 ### ● IPv4 패킷
 
-<img src="/images/Network/resources/IPv4packet.PNG" width="500px">
+<img src="./resources/IPv4packet.jpg" width="500px">
 
 - 서비스 타입 : 패킷의 우선 순위를 결정
 - 프로토콜 : 트랜스포트 계층의 어느 프로토콜에 전달할지를 판단하는 번호 부분
@@ -77,7 +77,7 @@ MTU보다 작은 크기의 패킷을 만들도록 설정해 데이터 유실을 
 
 ### ● IPv6 패킷
 
-<img src="/images/Network/resources/IPv4packet.PNG" width="500px">
+<img src="./resources/IPv4packet.jpg" width="500px">
 
 - 트래픽 클래스 : 패킷의 우선순위를 결정
 - 페이로드의 길이 : 데이터 부분의 길이
@@ -101,12 +101,12 @@ IPv4와 IPv6는 어드레스나 패킷 어느 것으로도 서로 호환이 되�
 
 ### 1) 네트워크 부와 호스트 부
 
-<img src="/images/Network/resources/ipadress.PNG" width="300px">
+<img src="./resources/ipadress.jpg" width="300px">
 
 IP 어드레스는 주소 할당 방법에 따라 `네트워크 부`와 `호스트 부`로 나뉜다.  
 (호스트는 네트워크에 연결된 컴퓨터나 네트워크 장비를 말한다.)  
 
-<img src="/images/Network/resources/ipadress2.PNG" width="600px">
+<img src="./resources/ipadress2.jpg" width="600px">
 
 라우터는 송신지 IP 어드레스의 네트워크 부의 정보를 보고  
 데이터를 송신할 목적지가 같은 네트워크 안에 있는지 다른 네트워크에 있는지 판단한다.  
@@ -142,7 +142,7 @@ IP 어드레스는 주소 할당 방법에 따라 `네트워크 부`와 `호스�
 어드레스 클래스와 달리 네트워크 부의 길이를 비트 단위로 유연하게 늘려서 사용 가능하다.  
 서브넷 마스크는 IP 어드레스에 추가되는 정보이므로 32비트 길이만큼의 정보가 더 필요하다.  
 
-<img src="/images/Network/resources/subnetmask.PNG" width="600px">
+<img src="./resources/subnetmask.jpg" width="600px">
 
 - IP 어드레스는 네트워크상에서 호스트를 식별하기 위해 사용되는데,  
   전체 32비트 중 네트워크 부를 제외한 호스트 부 부분만 자유롭게 할당하여 사용할 수 있다.  
@@ -237,7 +237,7 @@ OSPF(Open Shortest Path First) 프로토콜이 사용하는 방식
 
 도메인명은 계층 구조 형태를 마침표로 구분하여 표현한다.  
 
-<img src="/images/Network/resources/domain.png" width="700px">
+<img src="./resources/domain.jpg" width="700px">
 
 ## 7. DHCP
 

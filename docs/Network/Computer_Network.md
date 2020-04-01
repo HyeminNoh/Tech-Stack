@@ -60,7 +60,7 @@
 
 ## 4. TCP/IP 계층 모델
 
-<img src="./resources/TCP_IP_Model.png" width="400px">
+<img src="./resources/TCP_IP_Model.jpg" width="400px">
 
 ### 애플리케이션 계층
 `애플리케이션 계층`의 역할은 사용자가 실제로 체감할 수 있는 서비스를 제공하는 것이다.  
