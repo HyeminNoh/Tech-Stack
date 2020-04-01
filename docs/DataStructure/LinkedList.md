@@ -293,7 +293,7 @@ class Node<E>{
 
 ### 3-3. 원형 이중 연결 리스트
 
-<img src="./resources/circular doubly linked list.jpg" style="width:600px;">
+<img src="./resources/circular_doubly_linked_list.jpg" style="width:600px;">
 
 원형 리스트와 이중 연결 리스트의 개념이 합해진 구조의 리스트이다.  
 
