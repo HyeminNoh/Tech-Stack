@@ -59,7 +59,7 @@
 
 <img src="./resources/min_binarytree.jpg" height="200px" display="inline-block">
 
-<img src="./resources/3-node_binarytree.png" height="150px" display="inline-block">
+<img src="./resources/3-node_binarytree.jpg" height="150px" display="inline-block">
 
 `최대 높이 : 3, 최소 높이 : 2`
 
