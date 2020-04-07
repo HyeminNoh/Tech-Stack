@@ -1,16 +1,15 @@
 <template>
   <div>
     <div>
-      <h1>Tech-Stack📚
-      </h1>
-
+      <h1>Tech-Stack📚</h1>
+      <h3>신입 개발자로서 성장을 위한 전공 지식을 정리합니다 😊</h3>
       <div>
         <ul class="ul">
           <li>
-            <a href="https://github.com/shjang1013">GitHub(shjang1013)</>
+            <a href="https://github.com/shjang1013">GitHub(shjang1013)</a>
           </li>
           <li>
-            <a href="https://github.com/HyeminNoh">GitHub(HyeminNoh)</>
+            <a href="https://github.com/HyeminNoh">GitHub(HyeminNoh)</a>
           </li>
         </ul>
       </div>
