@@ -21,67 +21,67 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "Algorithms/Algorithms.html",
-    "revision": "ad487e1614045a98163c968fdbd6447a"
+    "revision": "a97c35df1b921c2f3c545b6e96f99ae3"
   },
   {
     "url": "Algorithms/BinarySearch.html",
-    "revision": "4197da56ac8969394518b05b4a9adbd7"
+    "revision": "f018daa6b0badbef52b9d827f3ee6cd1"
   },
   {
     "url": "Algorithms/BreadthFirstSearch.html",
-    "revision": "9c7fc8dbd518f27c8a7b3b73f91da0dc"
+    "revision": "08c849011b6433eebfe4f816f05cf144"
   },
   {
     "url": "Algorithms/BubbleSort.html",
-    "revision": "0f2b91282586cbe823f96f610f3a1874"
+    "revision": "1249e3541880efdb002d31fd3add6881"
   },
   {
     "url": "Algorithms/DepthFirstSearch.html",
-    "revision": "998faf41810b78ad19fd2751e60d1398"
+    "revision": "80a72c341854c2877be22ab7a377d82a"
   },
   {
     "url": "Algorithms/Hash.html",
-    "revision": "ab6599c0d2a6d641ef85f5632877abba"
+    "revision": "f1ba2f98eac911ed566d131eddb729fc"
   },
   {
     "url": "Algorithms/HeapSort.html",
-    "revision": "f7c3b7a4930266a3b4048274f6bda23b"
+    "revision": "f32e8ab0482413ee62fbe9ea7097c041"
   },
   {
     "url": "Algorithms/InsertionSort.html",
-    "revision": "ecb5413420e9c6d76aec060167356353"
+    "revision": "1abb2cba5ba3fc34c98e240458439dae"
   },
   {
     "url": "Algorithms/LinearSearch.html",
-    "revision": "b75eaf3f37fdc0c4c210119d8265c33c"
+    "revision": "a802c578bf3489db298030d372cc5683"
   },
   {
     "url": "Algorithms/PrimeNum.html",
-    "revision": "26cfa66aafbd2708c4bdce0a50d02f92"
+    "revision": "afcdd685499986c0306b4b629b4b67f3"
   },
   {
     "url": "Algorithms/QuickSort.html",
-    "revision": "35d0b319f7a5f2fdea2e647c664dc18d"
+    "revision": "b1a2b27522bcbcc350480d62c65f64b6"
   },
   {
     "url": "Algorithms/RadixSort.html",
-    "revision": "652062f7ab5f17a99debc38770abfe3f"
+    "revision": "80f4e73a81da5f2770fe3a0eba0a0332"
   },
   {
     "url": "Algorithms/Recursive.html",
-    "revision": "4488b3e303f68427952f6ab1f53381dc"
+    "revision": "ee48dec439eaf7382b54b549e5e5b57c"
   },
   {
     "url": "Algorithms/SelectionSort.html",
-    "revision": "fe45dbe3688bb2447c115061f4091c7f"
+    "revision": "53087646f91cb00c4bf23b9065d9f812"
   },
   {
     "url": "Algorithms/StringSearch.html",
-    "revision": "653d06b478472e51e4a6fcfc27744b3e"
+    "revision": "6bc34227be065f73392305d4013442cf"
   },
   {
     "url": "Algorithms/TimeComplexity.html",
-    "revision": "d0cb616c7984f3874da384fa6178b62a"
+    "revision": "5b2b156600ed19035964a06ddcb02cda"
   },
   {
     "url": "assets/css/0.styles.6ec522c8.css",
@@ -472,8 +472,8 @@ self.__precacheManifest = [
     "revision": "4ebef1a3bc07469951f8f0af393473a7"
   },
   {
-    "url": "assets/js/17.ac288f1b.js",
-    "revision": "3fc0e5a2a6dc537f888cd8adfb6a3ae9"
+    "url": "assets/js/17.2e6deca4.js",
+    "revision": "06d768183e8667eefba79a56b72a8729"
   },
   {
     "url": "assets/js/18.058b2f9e.js",
@@ -512,8 +512,8 @@ self.__precacheManifest = [
     "revision": "553d6c7292f0f5bbcbb20a02d02efd4d"
   },
   {
-    "url": "assets/js/26.4dda6446.js",
-    "revision": "d72bcc1fcda2fc65b8695cc3d5a9931d"
+    "url": "assets/js/26.b640f4e9.js",
+    "revision": "aa65d7687b97a13543d497a1a57b8dcd"
   },
   {
     "url": "assets/js/27.a1c94f19.js",
@@ -560,8 +560,8 @@ self.__precacheManifest = [
     "revision": "3dee0a88c44a32dbcb89068a177ace0b"
   },
   {
-    "url": "assets/js/37.d20f30cf.js",
-    "revision": "26e2a56937bc07fa95e9afac04702ce0"
+    "url": "assets/js/37.b28aa52e.js",
+    "revision": "14b5b8e7591eec82870ac0e03de067bf"
   },
   {
     "url": "assets/js/38.f60857b4.js",
@@ -636,80 +636,84 @@ self.__precacheManifest = [
     "revision": "8d79d6158a0109b4ff7b6c6c6b8d8d8e"
   },
   {
-    "url": "assets/js/54.8d7a24af.js",
-    "revision": "349f029f46e0ec3797a9646cb17db76a"
+    "url": "assets/js/54.143b63b8.js",
+    "revision": "ebe3c85f884dd2fb556d7196e9c44f60"
   },
   {
-    "url": "assets/js/55.f9c2f669.js",
-    "revision": "e129c1f7158c019323fe885180aca285"
+    "url": "assets/js/55.d6914318.js",
+    "revision": "fb50830ac69ae6aaa9ef979ed754eaf2"
   },
   {
-    "url": "assets/js/56.c774ca0c.js",
-    "revision": "77f618e52c9f631b718e76a69b64ab82"
+    "url": "assets/js/56.3c2b0dc8.js",
+    "revision": "6a8cebe258b161836aa1619e6e553c05"
   },
   {
-    "url": "assets/js/57.db6d290a.js",
-    "revision": "9abf2e377acebbeba0c1334c90bb6cd5"
+    "url": "assets/js/57.a50ee028.js",
+    "revision": "5a53ac353ab9adfaa74012a92deecd04"
+  },
+  {
+    "url": "assets/js/58.191c1561.js",
+    "revision": "c31e12813bdbc66a87aff5dd195871e9"
   },
   {
     "url": "assets/js/6.22bba4d2.js",
     "revision": "0f7ecd3c997b43e934bbd81887d2ba09"
   },
   {
-    "url": "assets/js/7.4b6f6bc0.js",
-    "revision": "1ea1c71af36a7ff5f5e74c651457b792"
+    "url": "assets/js/7.dc121677.js",
+    "revision": "773799b577eb51841585dd6cebc89ddb"
   },
   {
-    "url": "assets/js/8.da522855.js",
-    "revision": "a6e876b42cf8dfd41ae2615e3550b270"
+    "url": "assets/js/8.50a0d615.js",
+    "revision": "797d448cd2b75515e29f02b018a89458"
   },
   {
     "url": "assets/js/9.3042ed84.js",
     "revision": "1ac5360c0c05c3a1be1e915cee4664c4"
   },
   {
-    "url": "assets/js/app.20ada2a8.js",
-    "revision": "9a9b24013868926100dc73b16aa0da9a"
+    "url": "assets/js/app.612cdc70.js",
+    "revision": "fc887c028be661eba677c78d8727f2d9"
   },
   {
     "url": "DataStructure/Array.html",
-    "revision": "a6f55cd51983d7ce2e1e1d7d32271d16"
+    "revision": "3eb0418fffbbb1eadaf992f618f12f49"
   },
   {
     "url": "DataStructure/AVLTree.html",
-    "revision": "5feb7ea8b681310c5fc1edfd0fa79d26"
+    "revision": "76eb1a76344da895d410ba7bc2cc882c"
   },
   {
     "url": "DataStructure/BinarySearchTree.html",
-    "revision": "354cd96ab163e03a61d4c4977b87f2c5"
+    "revision": "2ac4f175d79ee14c271bf98ec1b7915f"
   },
   {
     "url": "DataStructure/BinaryTree.html",
-    "revision": "ed3c82ab87f183de32ec2fbe5c787dc3"
+    "revision": "4c7d6daba800e4cac9da0a4553a294e4"
   },
   {
     "url": "DataStructure/DataStructure.html",
-    "revision": "55d7dac9f77dd7d4f9bcf3996ffb9e13"
+    "revision": "0977a31fb980ab45101c3b88002f1bb2"
   },
   {
     "url": "DataStructure/Graph.html",
-    "revision": "b182fe7a8a7de9c1bfd2f24870532348"
+    "revision": "90462e9021fc5f1308bfd47421893d02"
   },
   {
     "url": "DataStructure/LinkedList.html",
-    "revision": "f9e1b8870b535e4d3082fd9b0808efd2"
+    "revision": "6d6115bea55af463bfb1709cd634c7a9"
   },
   {
     "url": "DataStructure/Queue.html",
-    "revision": "7f9ac2f253d9bace90c94776e76d7a9f"
+    "revision": "972bb1f56a191cae0f1e1df12ee765c3"
   },
   {
     "url": "DataStructure/Stack.html",
-    "revision": "b91ba14ac214846deb46aa6c7911fb38"
+    "revision": "fe7f0327c957ecc3f6be6441314b8979"
   },
   {
     "url": "DataStructure/Tree.html",
-    "revision": "d435c38c834e5459277c34439271d9b6"
+    "revision": "525daaa1404c9b9938acdb0593fcb7bb"
   },
   {
     "url": "images/Algorithms/resources/BFS_1.png",
@@ -925,99 +929,103 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f4629e57f08fddbbd2ed81e202df574f"
+    "revision": "b3f949b79a256237e4bc335ba5c998a3"
   },
   {
     "url": "Java/Class_and_Object.html",
-    "revision": "84373b30494c661cf3abf3921d9894a2"
+    "revision": "f653da533675c42ae9a8d4e4f3835b10"
   },
   {
     "url": "Java/ExceptionHandling.html",
-    "revision": "a82ea498570a23d2cf1d4e2e49cbcdc8"
+    "revision": "8a6219fc4120ac1192c9bf210f853bf2"
   },
   {
     "url": "Java/GarbageCollection.html",
-    "revision": "4214810692a6e4075e4274bd3d72bca3"
+    "revision": "9e12ba9dcfdfb1e1b6a6e9e4684b12da"
   },
   {
     "url": "Java/Generics.html",
-    "revision": "61c360e979c226b1337b7fbe0f88de7d"
+    "revision": "f1a46f8b6230fdfc75b191b5e60e997d"
   },
   {
     "url": "Java/Inheritance.html",
-    "revision": "a8e798e3e9cea4be832c4115b20e6d26"
+    "revision": "2ceb2d7b23a72a5950c88b5efdccd369"
   },
   {
     "url": "Java/Java.html",
-    "revision": "1ca4341287733a2e1ee2d686bf16675a"
+    "revision": "26863a03a94b3612cfe9b72541f9802a"
   },
   {
     "url": "Java/JVM(Java_Virtual_Machine).html",
-    "revision": "c9b7c9653fb707e0adbe2c9e6010d8a5"
+    "revision": "746a7c57e330f5f25a3b0b254153119c"
   },
   {
     "url": "Java/Lambda.html",
-    "revision": "668b8d298fffa67058ed7d94ea31e8ed"
+    "revision": "17e846ad4b683df33c64e02ac256ce3b"
   },
   {
     "url": "Java/Modifier.html",
-    "revision": "a0e0271aed727542194a597b469ee8d8"
+    "revision": "be71f875f0cf1ff533da77cde036df90"
   },
   {
     "url": "Java/Operator.html",
-    "revision": "38e1e52bf3f22634b3188dc233f9c13f"
+    "revision": "f658abc3633e52fad41adc19117896d5"
   },
   {
     "url": "Java/Overloading_and_Overriding.html",
-    "revision": "6fa187219728d3bed71edfdbde8be614"
+    "revision": "8283a107370d5e5050a3f6864d05112a"
   },
   {
     "url": "Java/Polymorphism.html",
-    "revision": "0388d3391088ffe32935afa9e57232ea"
+    "revision": "3bd4b17c72feeddfb53e846a7f952aa2"
   },
   {
     "url": "Java/String.html",
-    "revision": "a293b88030d0994a90b6c404aa75badc"
+    "revision": "28323cf7e225f795dcae12527538e226"
   },
   {
     "url": "Java/Thread.html",
-    "revision": "146c63956186a74f26af1c429a85df42"
+    "revision": "3ade0566a93ea6524cfb31973e0b90fe"
   },
   {
     "url": "Network/ApplicationLayer.html",
-    "revision": "530bd87ec5bf1084429e9278258d7139"
+    "revision": "435c0de25cd4b931612090cccbcd3f50"
   },
   {
     "url": "Network/Computer_Network.html",
-    "revision": "218e2284738d6c1107c5edba9a03d9c5"
+    "revision": "3a9ee14bb6f3275f2a82d5308704185d"
   },
   {
     "url": "Network/Cookie_and_Session.html",
-    "revision": "3a23cd565aac466195c3183fc6b4411a"
+    "revision": "b2a61a247480f5689b3561468e3c84a4"
+  },
+  {
+    "url": "Network/Get_and_Post.html",
+    "revision": "5b455d14b4c43dea14cfd8a74b96b09e"
   },
   {
     "url": "Network/HTTP_and_HTTPS.html",
-    "revision": "58b3f8ac9d9a15fce35634b4efaa6f31"
+    "revision": "abdcb4d80aa05a57f9f763be9e995704"
   },
   {
     "url": "Network/InternetLayer.html",
-    "revision": "e62d555bab1a8220c67b7aa777ec15b4"
+    "revision": "ab9864d6278638c68747e209a82bbed9"
   },
   {
     "url": "Network/NetworkInterfaceLayer.html",
-    "revision": "2653754d83eb2cf839a012d1c0404974"
+    "revision": "c19664c573cca7c2d7f58acd7377e80a"
   },
   {
     "url": "Network/OSI7Layers.html",
-    "revision": "2411a2240ca639a099ca2b1be26d16c7"
+    "revision": "33b0a3b4f91b99e2d060a90803c92e02"
   },
   {
     "url": "Network/TCP_3-way-handshake_and_4-way-handshake.html",
-    "revision": "5e3ad442e3420367e6f48f7bfdc7201d"
+    "revision": "d04c47e90e70d738b02f4eb0e9308033"
   },
   {
     "url": "Network/TransportLayer.html",
-    "revision": "a085a6cd3ed59cbab6a469256e3c28c9"
+    "revision": "257028a95f70f507d310bcf3a9f67c1c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
