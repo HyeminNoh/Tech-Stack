@@ -10,18 +10,18 @@
 ## 📒 Language  
 
 - ### 📖 JAVA
-    * [자바란?](./docs/Language/Java/Java.md)
-    * [JVM](./docs/Language/Java/JVM(Java%20Virtual%20Machine).md)
-    * [GC(GarbageCollection)](./docs/Language/Java/GarbageCollection.md)  
-    * [연산자](./docs/Language/Java/Operator.md)
-    * [클래스와 객체](./docs/Language/Java/Class_and_Object.md)
-    * [오버로딩과 오버라이딩](./docs/Language/Java/Overloading_and_Overriding.md)
-    * [상속](./docs/Language/Java/Inheritance.md)
-    * [제어자](./docs/Language/Java/Modifier.md)
-    * [다형성](./docs/Language/Java/Polymorphism.md)
-    * [String과 StringBuffer, StringBuilder](./docs/Language/Java/String.md)  
-    * [지네릭스](./docs/Language/Java/Generics.md)  
-    * [람다 표현식](./docs/Language/Java/Lambda.md)  
+    * [자바란?](./docs/Java/Java.md)
+    * [JVM](./docs/Java/JVM(Java_Virtual_Machine).md)
+    * [GC(GarbageCollection)](./docs/Java/GarbageCollection.md)  
+    * [연산자](./docs/Java/Operator.md)
+    * [클래스와 객체](./docs/Java/Class_and_Object.md)
+    * [오버로딩과 오버라이딩](./docs/Java/Overloading_and_Overriding.md)
+    * [상속](./docs/Java/Inheritance.md)
+    * [제어자](./docs/Java/Modifier.md)
+    * [다형성](./docs/Java/Polymorphism.md)
+    * [String과 StringBuffer, StringBuilder](./docs/Java/String.md)  
+    * [지네릭스](./docs/Java/Generics.md)  
+    * [람다 표현식](./docs/Java/Lambda.md)  
     
 ## 📕 Data Structure
 
