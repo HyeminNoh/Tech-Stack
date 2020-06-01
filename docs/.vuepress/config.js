@@ -21,7 +21,8 @@ module.exports = {
       sidebar.getSidebarGroup('/Java/', '1. Java', true),
       sidebar.getSidebarGroup('/DataStructure/', '2. Data Structure', true),
       sidebar.getSidebarGroup('/Algorithms/', '3. Algorithms', true),
-      sidebar.getSidebarGroup('/Network/', '4. Network', true)
+      sidebar.getSidebarGroup('/Network/', '4. Network', true),
+      sidebar.getSidebarGroup('/Database/', '5. Database', true)
     ],
     nav: [
       { text: 'GitHub(shjang1013)', link: 'https://github.com/shjang1013' },
