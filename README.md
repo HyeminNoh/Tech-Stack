@@ -68,8 +68,8 @@
 
 ## 📘 Database
 
-- 데이터베이스란?
 - [RDBMS와 NoSQL](./docs/Database/RDBMS_and_NoSQL.md)
+- [SQL JOIN문](./docs/Database/SQL_Join.md)
 
 ## 📙 Network
 
