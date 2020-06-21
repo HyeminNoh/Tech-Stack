@@ -45,18 +45,18 @@
 - [시간 복잡도](./docs/Algorithms/TimeComplexity.md)
 
 - ### 📖 Search
-    * [선형 검색](./docs/Algorithms/Search/LinearSearch.md)
-    * [이진 검색](./docs/Algorithms/Search/BinearySearch.md)
-    * [너비우선탐색(BFS)](./docs/Algorithms/Search/BreadthFirstSearch.md)
-    * [깊이우선탐색(DFS)](./docs/Algorithms/Search/DepthFirstSearch.md)
+    * [선형 검색](./docs/Algorithms/LinearSearch.md)
+    * [이진 검색](./docs/Algorithms/BinearySearch.md)
+    * [너비우선탐색(BFS)](./docs/Algorithms/BreadthFirstSearch.md)
+    * [깊이우선탐색(DFS)](./docs/Algorithms/DepthFirstSearch.md)
      
 - ### 📖 Sort  
-    * [선택정렬](./docs/Algorithms/Sort/SelectionSort.md)
-    * [삽입정렬](./docs/Algorithms/Sort/InsertionSort.md)
-    * [힙정렬](./docs/Algorithms/Sort/HeapSort.md)
-    * [퀵정렬](./docs/Algorithms/Sort/QuickSort.md)
-    * [기수정렬](./docs/Algorithms/Sort/RadixSort.md)
-    * [버블정렬](./docs/Algorithms/Sort/BubbleSort.md)
+    * [선택정렬](./docs/Algorithms/SelectionSort.md)
+    * [삽입정렬](./docs/Algorithms/InsertionSort.md)
+    * [힙정렬](./docs/Algorithms/HeapSort.md)
+    * [퀵정렬](./docs/Algorithms/QuickSort.md)
+    * [기수정렬](./docs/Algorithms/RadixSort.md)
+    * [버블정렬](./docs/Algorithms/BubbleSort.md)
 
 - ### 📖 Hash
     * [해시 알고리즘](./docs/Algorithms/Hash.md)
