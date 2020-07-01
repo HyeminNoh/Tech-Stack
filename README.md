@@ -24,7 +24,7 @@
     * [람다 표현식](./docs/Java/Lambda.md)  
     
 - ### 📖 JAVASCRIPT  
-    * 동기식 처리 모델 vs 비동기식 처리 모델
+    * [동기식 처리 모델 vs 비동기식 처리 모델](./docs/Javascript/AsynchronousProcessing.md)
     * [ES6: Promise](./docs/Javascript/Promise.md)
     * ES6: Async/Await
 
