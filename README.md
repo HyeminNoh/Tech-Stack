@@ -94,4 +94,10 @@
 
 ## 📓 OS
 
-## 📔 Design Pattern
+## 📔 Design Pattern  
+
+- MVC Pattern
+- MVP Pattern
+- Repository Pattern
+- Factory Pattern  
+
