@@ -109,6 +109,8 @@ public class FactoryPatternEx {
         // 사각형 인스턴스를 생성
         shape square = shapeFactory.getShape("SQUARE");
         square.draw();
+    }
+}
 ```
 
 ## 3. 결론
