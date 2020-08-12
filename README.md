@@ -99,5 +99,5 @@
 - MVC Pattern
 - MVP Pattern
 - Repository Pattern
-- Factory Pattern  
+- [Factory Method Pattern](./docs/DesignPattern/FactoryMethodPattern.md)
 
