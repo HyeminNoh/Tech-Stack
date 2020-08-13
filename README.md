@@ -96,8 +96,8 @@
 
 ## 📔 Design Pattern  
 
-- MVC Pattern
-- MVP Pattern
+- [MVC Pattern](/docs/DesignPattern/MVC.md)
+- [MVP Pattern](docs/DesignPattern/MVP.md)
 - Repository Pattern
 - [Factory Method Pattern](./docs/DesignPattern/FactoryMethodPattern.md)
 
