@@ -7,7 +7,7 @@
 ## 자바언어의 특징
 
 * 운영체제에 독립적
-* 객체지향언어
+* [객체지향언어](./ObjectorientedLanguage.md)
 * 비교적 배우기 쉬움 (단순함)
 * 자동 메모리 관리 (Garbage Collection)
 * 네트워크 분산처리 지원
