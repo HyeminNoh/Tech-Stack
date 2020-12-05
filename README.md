@@ -106,6 +106,7 @@
 
 ## 📔 Design Pattern  
 
+- [동기와 비동기](./docs/DesignPattern/AsynchronousProcessingModel.md)
 - [MVC Pattern](/docs/DesignPattern/MVC.md)
 - [MVP Pattern](docs/DesignPattern/MVP.md)
 - Repository Pattern
